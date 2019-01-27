@@ -1,0 +1,17 @@
+collections_dir: "_collections"
+exclude: [
+  "package.json",
+  "package-lock.json",
+  "node_modules",
+  "Gemfile",
+  "Gemfile.lock",
+  "gulpfile.js",
+  "readme.md"
+]
+include: [
+  "node_modules/bootstrap/dist/css/bootstrap.min.css"
+]
+sass:
+    load_paths:
+        - _sass
+        - node_modules
