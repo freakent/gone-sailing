@@ -15,37 +15,53 @@
 
 body {
   //padding-top: 3rem;
-  padding-bottom: 3rem;
+  //padding-bottom: 3rem;
   color: #5a5a5a;
 }
 
-
-/* CUSTOMIZE THE CAROUSEL
+/* navbar
 -------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-  margin-bottom: 4rem;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
+#navbar {
+  transition: 1.5s; /* Adds a transition effect when the navbar is changed */
 }
 
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 32rem;
-  background-color: #777;
-}
-.carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 32rem;
+.navbar-brand {
+  font-family: 'Permanent Marker', cursive;
 }
 
+/* front-page
+-------------------------------------------------- */
+body, html {
+  height:100%;
+}
+
+.front-page {
+  background-image: url("/images/IMG_4498.gif");
+  height: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .hero {
+    margin-bottom: 1.25rem;
+    font-family: "Permanent Marker", cursive;
+    font-size: 150%;
+
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+}
+/* banner image
+-------------------------------------------------- */
+.banner {
+  margin-bottom: 25px;
+
+  .container {
+    position: relative;
+    bottom: 25px;
+  }
+}
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
@@ -53,6 +69,7 @@ body {
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
   text-align: center;
 }
 .marketing h2 {

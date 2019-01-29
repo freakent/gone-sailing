@@ -9,6 +9,7 @@ gulp.task('vendor', function() {
     "./node_modules/bootstrap/dist/js/bootstrap.min.*",
     "./node_modules/jquery/dist/jquery.slim.*",
     "./node_modules/popper.js/dist/popper.min.*",
+    "./node_modules/holderjs/holder.min.*",
   ])
     .pipe(gulp.dest("./assets/vendor"))
 });
