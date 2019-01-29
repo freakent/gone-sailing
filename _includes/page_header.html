@@ -6,9 +6,6 @@
      </button>
      <div class="collapse navbar-collapse" id="navbarCollapse">
        <ul class="navbar-nav mr-auto">
-         <li class="nav-item active">
-           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-         </li>
          <li class="nav-item">
            <a class="nav-link" href="#">Crew</a>
          </li>
@@ -25,21 +22,33 @@
            <a class="nav-link" href="#">Boat Buying</a>
          </li>
        </ul>
-
      </div>
+     <div id="social" >
+       <span class="nav-item">
+         <a class="nav-link" href="https://www.instagram.com/mr.martin.jarvis/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Instagram">
+           <i id="ig-icon" class="fab fa-instagram fa-2x text-light"></i>
+         </a>
+       </span>
+      </div>
    </nav>
  </header>
 
  <script>
    window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-  document.getElementById("navbar").classList.remove("navbar-dark", "bg-transparent");
-  document.getElementById("navbar").classList.add("navbar-light", "bg-white");
-} else {
-  document.getElementById("navbar").classList.remove("navbar-light", "bg-white");
-  document.getElementById("navbar").classList.add("navbar-dark", "bg-transparent");
-}
-}
+    function scrollFunction() {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("navbar").classList.remove("navbar-dark", "bg-transparent");
+        document.getElementById("navbar").classList.add("navbar-light", "bg-white");
+        document.getElementById("ig-icon").classList.remove("text-light");
+        document.getElementById("ig-icon").classList.add("text-dark");
+
+      } else {
+        document.getElementById("navbar").classList.remove("navbar-light", "bg-white");
+        document.getElementById("navbar").classList.add("navbar-dark", "bg-transparent");
+        document.getElementById("ig-icon").classList.remove("text-dark");
+        document.getElementById("ig-icon").classList.add("text-light");
+      }
+
+    }
  </script>
