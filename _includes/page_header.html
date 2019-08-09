@@ -1,11 +1,22 @@
+{% if page.layout == "front_page" %}
+  {% assign navbar_class = "navbar-dark bg-transparent" %}
+  {% assign text_class = "text-light" %}
+{% else %}
+  {% assign navbar_class = "navbar-light bg-white" %}
+  {% assign text_class = "text-dark" %}
+{% endif %}
+
 <header>
-   <nav id="navbar" class="navbar navbar-expand-md fixed-top navbar-dark bg-transparent">
-     <a class="navbar-brand" href="#">Gone Sailing</a>
+   <nav id="navbar" class="navbar navbar-expand-md fixed-top {{ navbar_class }}">
+     <a class="navbar-brand" href="/">Gone Sailing</a>
+    
      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
        <span class="navbar-toggler-icon"></span>
      </button>
-     <div class="collapse navbar-collapse" id="navbarCollapse">
-       <ul class="navbar-nav mr-auto">
+    
+     <div class="collapse navbar-collapse justify-content-between " id="navbarCollapse">
+
+       <ul class="navbar-nav">
          <li class="nav-item">
            <a class="nav-link" href="#">Crew</a>
          </li>
@@ -21,14 +32,21 @@
          <li class="nav-item">
            <a class="nav-link" href="#">Boat Buying</a>
          </li>
-       </ul>
-     </div>
-     <div id="social" >
-       <span class="nav-item">
-         <a class="nav-link" href="https://www.instagram.com/mr.martin.jarvis/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow us on Instagram">
-           <i id="ig-icon" class="fab fa-instagram fa-2x text-light"></i>
-         </a>
-       </span>
+        </ul>
+
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.instagram.com/mr.martin.jarvis/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow on Instagram">
+                  <span class="align-middle">
+                  <i id="ig-icon" class="fab fa-instagram fa-2x {{ text_class }}"></i>
+                  <span class="d-md-none">
+                    Follow on Instagram
+                  </span>
+                </span>
+                </a>
+            </li>
+        </ul>
+
       </div>
    </nav>
  </header>
@@ -37,18 +55,22 @@
    window.onscroll = function() {scrollFunction()};
 
     function scrollFunction() {
-      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        document.getElementById("navbar").classList.remove("navbar-dark", "bg-transparent");
-        document.getElementById("navbar").classList.add("navbar-light", "bg-white");
-        document.getElementById("ig-icon").classList.remove("text-light");
-        document.getElementById("ig-icon").classList.add("text-dark");
+      if ("{{page.layout}}" == "front_page") {
 
-      } else {
-        document.getElementById("navbar").classList.remove("navbar-light", "bg-white");
-        document.getElementById("navbar").classList.add("navbar-dark", "bg-transparent");
-        document.getElementById("ig-icon").classList.remove("text-dark");
-        document.getElementById("ig-icon").classList.add("text-light");
-      }
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+          document.getElementById("navbar").classList.remove("navbar-dark", "bg-transparent");
+          document.getElementById("navbar").classList.add("navbar-light", "bg-white");
+          document.getElementById("ig-icon").classList.remove("text-light");
+          document.getElementById("ig-icon").classList.add("text-dark");
+
+        } else {
+          document.getElementById("navbar").classList.remove("navbar-light", "bg-white");
+          document.getElementById("navbar").classList.add("navbar-dark", "bg-transparent");
+          document.getElementById("ig-icon").classList.remove("text-dark");
+          document.getElementById("ig-icon").classList.add("text-light");
+        }
+
+      } 
 
     }
  </script>
