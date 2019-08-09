@@ -16,22 +16,34 @@ function jekyllBuild(cb) {
   })
 }
 
-function vendor_assets() {
+function bootstrap_js() {
     return src([
       "./node_modules/bootstrap/dist/js/bootstrap.min.*",
       "./node_modules/jquery/dist/jquery.slim.*",
       "./node_modules/popper.js/dist/umd/popper.min.*",
       "./node_modules/holderjs/holder.min.*",
     ])
-    .pipe(debug({title:'vendor asset'}))
+    .pipe(debug({title:'boostrap:js'}))
     .pipe(dest("./assets/vendor"))
 }
 
+function bootstrap_scss() {
+  return src([
+    "./node_modules/bootstrap/scss/*",
+  ])
+  .pipe(debug({title:'boostrap:scss'}))
+  .pipe(dest("./_sass/bootstrap"))
+}
+
+function bootstrap_assets(done) {
+  return parallel(bootstrap_js, bootstrap_scss)(done)
+}
+
 function fontawesom_scss() {
-    return src([
-      "./node_modules/@fortawesome/fontawesome-free/scss/*",
-    ])
-    .pipe(dest("./_sass/fontawesome"))
+  return src([
+    "./node_modules/@fortawesome/fontawesome-free/scss/*",
+  ])
+  .pipe(dest("./_sass/fontawesome"))
 }
 
 function fontawesome_fonts() {
@@ -58,6 +70,6 @@ function generateThumbs() {
 //module.exports.default = series(parallel(generateThumbs, jekyllBuild), publishSite)
 module.exports.thumbs = generateThumbs
 module.exports.build = parallel(jekyllBuild, generateThumbs)
-module.exports.assets = parallel(vendor_assets, fontawesome_assets)
+module.exports.assets = parallel(bootstrap_assets, fontawesome_assets)
 module.exports.default = module.exports.assets
 module.exports.test = fontawesome_assets
