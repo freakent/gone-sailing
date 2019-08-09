@@ -10,7 +10,7 @@
    <nav id="navbar" class="navbar navbar-expand-md fixed-top {{ navbar_class }}">
      <a class="navbar-brand" href="./">Gone Sailing</a>
     
-     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+     <button id="toggled" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
        <span class="navbar-toggler-icon"></span>
      </button>
     
@@ -52,11 +52,16 @@
  </header>
 
  <script>
+
+  $('.collapse').on('show.bs.collapse', function (e) {
+    console.log("toggle", e)
+  })
+
    window.onscroll = function() {scrollFunction()};
 
     function scrollFunction() {
-      document.getElementById("crew").innerText = document.documentElement.scrollTop
       if ("{{page.layout}}" == "front_page") {
+        document.getElementById("debug").innerText = document.documentElement.scrollTop
 
         if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
           document.getElementById("navbar").classList.remove("navbar-dark", "bg-transparent");

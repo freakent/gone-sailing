@@ -1,7 +1,7 @@
 ---
 layout: content_page
-title: Day Sail Visitor Information
-sub-title: Welcome aboard Anika!
+title: Information for Visitors 
+sub-title: Welcome aboard Anika! This information will help you prepare for your day sailing with us.
 banner-image: anika-halcyon-gibraltar.jpg
 ---
 ## What to expect
@@ -25,8 +25,8 @@ Hopefully we will be outside in the sunshine most of the time we are sailing. A 
 We recognise that some people are unfortunately affected by sea sickness. If you know you suffer from sea sickness please let us know before we depart and take appropriate steps to look after yourself. This YouTube video has some good advice for dealing with sea sicknesses.
 <!-- https://www.youtube.com/watch?v=HNUhfsSWTKI -->
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=HNUhfsSWTKI" target="_blank">
-<img src="http://img.youtube.com/vi/HNUhfsSWTKI/0.jpg" alt="IMAGE ALT TEXT HERE" class="img-fluid img-thumbnail mb-3" />
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=HNUhfsSWTKI" target="_blank" class="mx-auto">
+<img src="http://img.youtube.com/vi/HNUhfsSWTKI/0.jpg" alt="IMAGE ALT TEXT HERE" class="img-fluid img-thumbnail mb-3 rounded mx-auto" />
 </a>
 
 ## Aye Aye, Captain
