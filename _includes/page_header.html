@@ -51,32 +51,43 @@
    </nav>
  </header>
 
- <script>
+<script>
+  function navbar_white() {
+    document.getElementById("navbar").classList.remove("navbar-dark", "bg-transparent");
+    document.getElementById("navbar").classList.add("navbar-light", "bg-white");
+    document.getElementById("ig-icon").classList.remove("text-light");
+    document.getElementById("ig-icon").classList.add("text-dark");
+  }
 
-  $('.collapse').on('show.bs.collapse', function (e) {
-    console.log("toggle", e)
-  })
+  function navbar_transparent() {
+    document.getElementById("navbar").classList.remove("navbar-light", "bg-white");
+    document.getElementById("navbar").classList.add("navbar-dark", "bg-transparent");
+    document.getElementById("ig-icon").classList.remove("text-dark");
+    document.getElementById("ig-icon").classList.add("text-light");
+  }
 
-   window.onscroll = function() {scrollFunction()};
+  window.onscroll = function() {scrollFunction()};
 
-    function scrollFunction() {
-      if ("{{page.layout}}" == "front_page") {
-        document.getElementById("debug").innerText = document.documentElement.scrollTop
+  function scrollFunction() {
+    if ("{{page.layout}}" == "front_page") {
+      document.getElementById("debug").innerText = document.documentElement.scrollTop
 
-        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-          document.getElementById("navbar").classList.remove("navbar-dark", "bg-transparent");
-          document.getElementById("navbar").classList.add("navbar-light", "bg-white");
-          document.getElementById("ig-icon").classList.remove("text-light");
-          document.getElementById("ig-icon").classList.add("text-dark");
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        navbar_white()
+      } else {
+        $(".navbar-collapse").collapse('hide')
+        navbar_transparent()
+      }
 
-        } else {
-          document.getElementById("navbar").classList.remove("navbar-light", "bg-white");
-          document.getElementById("navbar").classList.add("navbar-dark", "bg-transparent");
-          document.getElementById("ig-icon").classList.remove("text-dark");
-          document.getElementById("ig-icon").classList.add("text-light");
-        }
+    } 
+  }
 
-      } 
+  $( document ).ready(function() {
+    $('.navbar-collapse').on('show.bs.collapse', function() {
+      navbar_white()
+    })
 
-    }
+  });
+
+
  </script>
