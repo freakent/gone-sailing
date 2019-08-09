@@ -17,7 +17,7 @@
      <div class="collapse navbar-collapse justify-content-between " id="navbarCollapse">
 
        <ul class="navbar-nav">
-         <li class="nav-item">
+         <li class="nav-item" id="crew">
            <a class="nav-link" href="#">Crew</a>
          </li>
          <li class="nav-item">
@@ -55,6 +55,7 @@
    window.onscroll = function() {scrollFunction()};
 
     function scrollFunction() {
+      document.getElementById("crew").innerText = document.documentElement.scrollTop
       if ("{{page.layout}}" == "front_page") {
 
         if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
