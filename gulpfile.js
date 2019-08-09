@@ -29,10 +29,10 @@ function bootstrap_js() {
 
 function bootstrap_scss() {
   return src([
-    "./node_modules/bootstrap/scss/*",
+    "./node_modules/bootstrap/scss/**/*"
   ])
   .pipe(debug({title:'boostrap:scss'}))
-  .pipe(dest("./_sass/bootstrap"))
+  .pipe(dest("./_sass/bootstrap/"))
 }
 
 function bootstrap_assets(done) {
@@ -41,14 +41,14 @@ function bootstrap_assets(done) {
 
 function fontawesom_scss() {
   return src([
-    "./node_modules/@fortawesome/fontawesome-free/scss/*",
+    "./node_modules/@fortawesome/fontawesome-free/scss/**/*"
   ])
-  .pipe(dest("./_sass/fontawesome"))
+  .pipe(dest("./_sass/fontawesome/"))
 }
 
 function fontawesome_fonts() {
     return src([
-      "./node_modules/@fortawesome/fontawesome-free/webfonts/*",
+      "./node_modules/@fortawesome/fontawesome-free/webfonts/**/*"
     ])
     .pipe(dest("./assets/vendor/fontawesome"))
 }
