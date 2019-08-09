@@ -1,3 +1,4 @@
+baseurl: "/gone-sailing"
 collections_dir: "_collections"
 exclude: [
   "package.json",
@@ -9,7 +10,7 @@ exclude: [
   "readme.md"
 ]
 include: [
-  "node_modules/bootstrap/dist/css/bootstrap.min.css"
+  "/assets/vendor/*.js"
 ]
 sass:
     load_paths:
