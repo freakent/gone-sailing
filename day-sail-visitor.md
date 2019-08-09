@@ -26,7 +26,7 @@ We recognise that some people are unfortunately affected by sea sickness. If you
 <!-- https://www.youtube.com/watch?v=HNUhfsSWTKI -->
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=HNUhfsSWTKI" target="_blank">
-<img src="http://img.youtube.com/vi/HNUhfsSWTKI/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" class="img-fluid mb-3" />
+<img src="http://img.youtube.com/vi/HNUhfsSWTKI/0.jpg" alt="IMAGE ALT TEXT HERE" class="img-fluid img-thumbnail mb-3" />
 </a>
 
 ## Aye Aye, Captain
@@ -37,7 +37,9 @@ Anika is berthed at Mercury Yacht Harbour, Satchell Lane, Hamble. SO31 4HQ
 There is ample free car parking and parking for our visitors is not a problem. We are moored on Pontoon B. The entrance to Pontoon B is to the right-hand side of the car park as you enter, by the Hamble School Of Yachting building. 
 Entrance to the Pontoons is secured by electronic keypads with codes, so give us a ring from the car park when you arrive and we’ll come up to meet you.
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2517.835889520656!2d-1.3148637849098088!3d50.87123786483732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487470303cdf90f7%3A0xd2130c0a4ca50501!2sMercury+Yacht+Harbour!5e0!3m2!1sen!2suk!4v1565301482262!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:0; margin-bottom:20px" allowfullscreen></iframe>
+<div class="embed-responsive embed-responsive-16by9 mb-3">
+<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2517.835889520656!2d-1.3148637849098088!3d50.87123786483732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487470303cdf90f7%3A0xd2130c0a4ca50501!2sMercury+Yacht+Harbour!5e0!3m2!1sen!2suk!4v1565301482262!5m2!1sen!2suk"  style="border:0; margin-bottom:20px" allowfullscreen></iframe>
+</div>
 
 ## "Home Work" <small>(optional)</small>
 If you want to come aboard a little more prepared and ready to become a salty sea dog, you could familiarise yourself with the following terms and know what they mean.  There won’t be a pop quiz or anything, it’s just good to know.
