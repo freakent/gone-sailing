@@ -8,7 +8,7 @@
 
 <header>
    <nav id="navbar" class="navbar navbar-expand-md fixed-top {{ navbar_class }}">
-     <a class="navbar-brand" href="./">Gone Sailing</a>
+     <a class="navbar-brand" href="{{ site.baseurl }}/">Gone Sailing</a>
     
      <button id="toggled" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
        <span class="navbar-toggler-icon"></span>
@@ -24,13 +24,13 @@
            <a class="nav-link" href="#">Our Boat</a>
          </li>
          <li class="nav-item">
-           <a class="nav-link" href="#">Cruising</a>
+           <a class="nav-link" href="{{ site.baseurl }}{% link _categories/cruising.md %}">Cruising</a>
          </li>
          <li class="nav-item">
-           <a class="nav-link" href="#">Boat Jobs</a>
+           <a class="nav-link" href="{{ site.baseurl }}{% link _categories/boat-jobs.md %}">Boat Jobs</a>
          </li>
          <li class="nav-item">
-           <a class="nav-link" href="#">Boat Buying</a>
+           <a class="nav-link" href="{{ site.baseurl }}{% link _categories/boat-buying.md %}">Boat Buying</a>
          </li>
         </ul>
 

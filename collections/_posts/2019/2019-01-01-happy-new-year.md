@@ -1,5 +1,7 @@
 ---
-layout: post
+layout: post_page
+categories: cruising
+tags: [Newtown Creek, New Year]
 title: New Year in Newtown Creek
 primary_image: anika-newtown-creek.jpg
 ---

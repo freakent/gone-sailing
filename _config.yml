@@ -1,5 +1,19 @@
-baseurl: "/gone-sailing"
-collections_dir: "_collections"
+baseurl: /gone-sailing
+collections_dir: collections
+collections:
+  categories:
+    output: true
+    permalink: /:title/index:output_ext
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "categories"
+    values:
+      layout: category_page
+
+
 exclude: [
   "package.json",
   "package-lock.json",
@@ -7,6 +21,7 @@ exclude: [
   "Gemfile",
   "Gemfile.lock",
   "gulpfile.js",
+  "gulpfile3x.js",
   "readme.md"
 ]
 include: [

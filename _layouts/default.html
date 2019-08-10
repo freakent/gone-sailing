@@ -9,22 +9,22 @@
     <link rel="icon" href="../../../../favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/main.css">
 
     <title>Hello, world!</title>
   </head>
   <body>
-    <script type="text/javascript" src="./assets/vendor/jquery.slim.min.js"></script>
+    <script type="text/javascript" src="{{site.baseurl}}/assets/vendor/jquery.slim.min.js"></script>
     {% include page_header.html %}
     {{ content }}
     {% include page_footer.html %}
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script type="text/javascript" src="./assets/vendor/jquery.slim.min.js"></script>
-    <script type="text/javascript" src="./assets/vendor/popper.min.js"></script>
-    <script type="text/javascript" src="./assets/vendor/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./assets/vendor/holder.min.js"></script>
+    <!-- <script type="text/javascript" src="{{site.baseurl}}/assets/vendor/jquery.slim.min.js"></script> -->
+    <script type="text/javascript" src="{{site.baseurl}}/assets/vendor/popper.min.js"></script>
+    <script type="text/javascript" src="{{site.baseurl}}/assets/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{site.baseurl}}/assets/vendor/holder.min.js"></script>
     <script>
     $(function () {
       $('[data-toggle="tooltip"]').tooltip()

@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: post_page
+categories: boat-buying
 title: Launch Day
 primary_image: anika-launch.jpg 
 ---
