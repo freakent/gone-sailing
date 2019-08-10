@@ -2,7 +2,8 @@
 layout: post_page
 categories: boat-buying
 title: Launch Day
-primary_image: anika-launch.jpg 
+primary_image: anika-launch-day.png 
+featurette_image: 2018/09/03/anika-launch-day.png
 ---
 With the surveyors report and final negotiations completed, next step was to
 get Anika back into the water ready for the sea trial. The boat yard has a sling

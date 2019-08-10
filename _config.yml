@@ -1,4 +1,5 @@
 baseurl: /gone-sailing
+imagesurl: /gone-sailing/images/ 
 collections_dir: collections
 collections:
   categories:

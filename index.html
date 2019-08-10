@@ -11,17 +11,6 @@ layout: front_page
 </div>
 
  <main role="main">
-<!--
-<div class="banner">
-  <img class="img-fluid" src="images/anika-halcyon-gibraltar-crs.jpg" alt="First slide">
-  <div class="container">
-    <div class="carousel-caption text-left">
-      <h1>If we're not here, we've probaby gone sailing</h1>
-      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-    </div>
-  </div>
-</div>
--->
 
    <!-- Marketing messaging and featurettes
    ================================================== -->
@@ -31,15 +20,21 @@ layout: front_page
 
      <!-- Three columns of text below the carousel -->
      <div class="row">
-       <div class="col-lg-4">
-         <img class="rounded-circle" src="{{site.baseurl}}/images/beaulieu-river.jpg" alt="Generic placeholder image" width="140" height="140">
+
+      <div class="col-lg-4">
+          <a href="{{ site.baseurl }}{% link _categories/cruising.md %}">
+            <img class="rounded-circle" src="{{site.baseurl}}/images/beaulieu-river.jpg" alt="Generic placeholder image" width="140" height="140">
+          </a>          
          <h2>Cruising</h2>
          <p>The reason for doing what we do. Nothing better than visiting wonderful new places and
            enjoying fun new experiences all by sailboat. </p>
          <p><a class="btn btn-secondary" href="{{ site.baseurl }}{% link _categories/cruising.md %}" role="button">View stories &raquo;</a></p>
        </div><!-- /.col-lg-4 -->
+
        <div class="col-lg-4">
-         <img class="rounded-circle" src="{{site.baseurl}}/images/engine.jpg" alt="Generic placeholder image" width="140" height="140">
+          <a href="{{ site.baseurl }}{% link _categories/boat-jobs.md %}">
+            <img class="rounded-circle" src="{{site.baseurl}}/images/engine.jpg" alt="Generic placeholder image" width="140" height="140">
+          </a>
          <h2>Boat Jobs</h2>
          <p>
            It's not all cocktails and sunshine, sometimes you have to get your
@@ -47,8 +42,11 @@ layout: front_page
          </p>
          <p><a class="btn btn-secondary" href="{{ site.baseurl }}{% link _categories/boat-jobs.md %}" role="button">View stories &raquo;</a></p>
        </div><!-- /.col-lg-4 -->
+
        <div class="col-lg-4">
-         <img class="rounded-circle" src="{{site.baseurl}}/images/anika-launch-day.png" alt="Generic placeholder image" width="140" height="140">
+        <a href="{{ site.baseurl }}{% link _categories/boat-buying.md %}">
+          <img class="rounded-circle" src="{{site.baseurl}}/images/anika-launch-day.png" alt="Generic placeholder image" width="140" height="140">
+        </a>
          <h2>Boat Buying</h2>
          <p>
            Buying a boat can be a scary process if you have never done it
@@ -56,10 +54,22 @@ layout: front_page
          </p>
          <p><a class="btn btn-secondary" href="{{ site.baseurl }}{% link _categories/boat-buying.md %}" role="button">View stories &raquo;</a></p>
        </div><!-- /.col-lg-4 -->
+
      </div><!-- /.row -->
 
 
      <!-- START THE FEATURETTES -->
+    {% for post in site.posts %}
+      {% capture misc %}
+      {{ post.date | date_to_long_string: "ordinal" }} | {{ post.categories }}
+      {% endcapture %}
+      {% include featurette.html 
+          heading=post.title 
+          subheading=post.subtitle 
+          body=post.excerpt 
+          image=post.featurette_image 
+          misc=misc %}
+    {% endfor %}
 
      <hr class="featurette-divider">
 

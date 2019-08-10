@@ -1,0 +1,17 @@
+
+<hr class="featurette-divider">
+
+<div class="row featurette">
+  <div class="col-md-7 {% cycle 'order-md-1', 'order-md-2' %}">
+    <h2 class="featurette-heading">{{ include.heading }} <small class="text-muted">{{ include.subheading }}</small></h2>
+    <p class="lead">{{ include.body }}</p>
+    <p><em>{{ include.misc }}</em></p>
+  </div>
+  <div class="col-md-5 {% cycle 'order-md-2', 'order-md-1' %}">
+    {% if include.image %}
+    <img class="featurette-image img-fluid mx-auto" src="{{ include.image | prepend:site.imagesurl }}" alt="Generic placeholder image">
+    {% else %}
+    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+    {% endif %}
+  </div>
+</div>
