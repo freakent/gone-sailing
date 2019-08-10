@@ -1,22 +1,24 @@
 ---
 layout: default
 ---
-<div class="container" style="margin-top:80px;">
+<main role="main">
+
+  <div class="container" style="margin-top:80px;">
+
     <div class="row">
-
-      <main class="col">
-        <h1 class="text-uppercase">{{page.title}}</h1>
-        <p class="font-italic">{{page.sub-title}}</p>
-        {% if page.banner-image %}
-        <img src="{{site.baseurl}}/images/{{page.banner-image}}" class="img-fluid mb-3">
-        {% else %}
-        <img class="img-fluid mb-3" data-src="holder.js/800x450/auto" alt="Generic placeholder image">
-        {% endif %}
-
-        {{ content }}
-
-        <div class="card-deck">
-          <div class="row">
+      
+      <div class="col">
+          <h1 class="text-uppercase">{{page.title}}</h1>
+          <p class="font-italic">{{page.sub-title}}</p>
+  
+          {{ content }}
+  
+      </div>
+    </div>
+    
+    <div class="row">
+      
+      <div class="card-deck">
         
             {% assign sorted_posts = site.categories[page.slug] | sorted:'date' | reversed %}
             {% for post in  sorted_posts %}
@@ -35,17 +37,29 @@ layout: default
                 %}
               </div>
             {% else %}
-              Nothind for this category {{page.slug}} 
+            <div class="col">
+                <p>No posts for this category {{page.slug}} </p>
+            </div>
             {% endfor %}
         
-          </div>
-        </div>
-
-      </main>
-
+      </div> <!-- card-deck -->
     </div>
 
-  </div>
+    <div class="row">
+      <div class="col">
+      {% if page.banner-image %}
+      <img src="{{site.baseurl}}/images/{{page.banner-image}}" class="img-fluid mt-3">
+      {% else %}
+      <img class="img-fluid mt-3" data-src="holder.js/800x450/auto" alt="Generic placeholder image">
+      {% endif %}
+    </div>
+    </div> <!-- row -->
+
+  </div> <!-- container -->
+
+</main>
+
+
 
   <style>
     :target::before {
@@ -55,14 +69,3 @@ layout: default
       margin: -60px 0 0; /* negative fixed header height */
     }
   </style>
-
-  <script>
-    $(document).ready(function(){
-      $("h2").each(function(index){
-        $('#sidebar .list-group').append('<a class="list-group-item list-group-item-action" href="#'   
-          + $(this).attr('id') 
-          + '">' 
-          + $(this).text() + "</a>")
-      });
-    });
-    </script>
