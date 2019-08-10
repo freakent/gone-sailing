@@ -1,0 +1,10 @@
+<div class="card">
+    <a href="{{site.baseurl | append:include.link}}">
+    <img class="card-img-top" src="{{ include.image | prepend:site.sq500url }}" alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title">{{ include.heading }}</h5>
+        <p class="card-text">{{ include.body }}</p>
+        <p class="card-text"><small class="text-muted">{{ include.misc }}</small></p>
+    </div>
+    </a>
+</div>

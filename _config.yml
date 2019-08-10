@@ -4,7 +4,7 @@ thumbsurl: /gone-sailing/assets/thumbs/
 sq500url: /gone-sailing/assets/500x500/
 collections_dir: collections
 collections:
-  categories:
+  post-categories:
     output: true
     permalink: /:title/index:output_ext
 
@@ -12,7 +12,7 @@ defaults:
   -
     scope:
       path: ""
-      type: "categories"
+      type: "post-categories"
     values:
       layout: category_page
 
