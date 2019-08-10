@@ -59,16 +59,25 @@ function fontawesome_assets(done) {
   
 
 function generateThumbs() {
-  const local_thumbs = "./thumbs/"
-  return src('img/**/*.{jpg,png}')
+  const local_thumbs = "./assets/thumbs/"
+  return src('./images/**/*.{jpg,png}')
     .pipe(changed(local_thumbs))
-    .pipe(imageResize({ imageMagick: true, height: 150 }))
+    .pipe(imageResize({ imageMagick: true, height: 150, width: 150, crop:true, noProfile:true }))
     .pipe(dest(local_thumbs))
     .pipe(debug({title: 'New thumbnail'}))
 }
 
+function generate500x500() {
+  const local_thumbs = "./assets/500x500/"
+  return src('./images/**/*.{jpg,png}')
+    .pipe(changed(local_thumbs))
+    .pipe(imageResize({ imageMagick: true, height: 500, width: 500, crop:true, noProfile:true }))
+    .pipe(dest(local_thumbs))
+    .pipe(debug({title: 'New 500x500'}))
+}
+
 //module.exports.default = series(parallel(generateThumbs, jekyllBuild), publishSite)
-module.exports.thumbs = generateThumbs
+module.exports.thumbs = parallel(generateThumbs, generate500x500)
 module.exports.build = parallel(jekyllBuild, generateThumbs)
 module.exports.assets = parallel(bootstrap_assets, fontawesome_assets)
 module.exports.default = module.exports.assets

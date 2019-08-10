@@ -3,15 +3,20 @@
 
 <div class="row featurette">
   <div class="col-md-7 {% cycle 'order-md-1', 'order-md-2' %}">
-    <h2 class="featurette-heading">{{ include.heading }} <small class="text-muted">{{ include.subheading }}</small></h2>
+      <a href="{{site.baseurl | append:include.url}}">
+          <h2 class="featurette-heading">{{ include.heading }} <small class="text-muted">{{ include.subheading }}</small></h2>
+      </a>
     <p class="lead">{{ include.body }}</p>
     <p><em>{{ include.misc }}</em></p>
+    <p><a class="btn btn-secondary" href="{{ site.baseurl | append:include.url }}" role="button">read more &raquo;</a></p>
   </div>
   <div class="col-md-5 {% cycle 'order-md-2', 'order-md-1' %}">
+    <a href="{{site.baseurl | append:include.url}}">
     {% if include.image %}
-    <img class="featurette-image img-fluid mx-auto img-thumbnail rounded" src="{{ include.image | prepend:site.imagesurl }}" alt="Generic placeholder image">
+    <img class="featurette-image img-fluid mx-auto img-thumbnail rounded" src="{{ include.image | prepend:site.sq500url }}" alt="Generic placeholder image">
     {% else %}
     <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
     {% endif %}
+    </a>
   </div>
 </div>

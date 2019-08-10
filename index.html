@@ -23,7 +23,7 @@ layout: front_page
 
       <div class="col-lg-4">
           <a href="{{ site.baseurl }}{% link _categories/cruising.md %}">
-            <img class="rounded-circle" src="{{ site.imagesurl | append:'/beaulieu-river.jpg' }}" alt="Generic placeholder image" width="140" height="140">
+            <img class="rounded-circle" src="{{ site.sq500url | append:'/beaulieu-river.jpg' }}" alt="Generic placeholder image" width="140" height="140">
           </a>          
          <h2>Cruising</h2>
          <p>The reason for doing what we do. Nothing better than visiting wonderful new places and
@@ -33,14 +33,14 @@ layout: front_page
 
        <div class="col-lg-4">
           <a href="{{ site.baseurl }}{% link _categories/boat-jobs.md %}">
-            <img class="rounded-circle" src="{{ site.imagesurl | append:'/engine.jpg' }}" alt="Generic placeholder image" width="140" height="140">
+            <img class="rounded-circle" src="{{ site.sq500url | append:'/engine.jpg' }}" alt="Generic placeholder image" width="140" height="140">
           </a>
          <h2>Boat Jobs</h2>
          <p>
            It's not all cocktails and sunshine, sometimes you have to get your
            hands dirty. We try to do as much DIY boat work as we can.
          </p>
-         <p><a class="btn btn-secondary" href="{{ site.baseurl }}{% link _categories/boat-jobs.md %}" role="button">View stories &raquo;</a></p>
+         <p><a class="btn btn-secondary" href="{{ site.sq500url }}{% link _categories/boat-jobs.md %}" role="button">View stories &raquo;</a></p>
        </div><!-- /.col-lg-4 -->
 
        <div class="col-lg-4">
@@ -59,7 +59,8 @@ layout: front_page
 
 
      <!-- START THE FEATURETTES -->
-    {% for post in site.posts %}
+     {% assign sorted_posts = site.posts | sort:date | reverse %}
+    {% for post in sorted_posts limit:5 %}
       {% capture misc %}
       {{ post.date | date_to_long_string: "ordinal" }} | {{ post.categories }}
       {% endcapture %}
@@ -68,7 +69,8 @@ layout: front_page
           subheading=post.subtitle 
           body=post.excerpt 
           image=post.featurette_image 
-          misc=misc %}
+          misc=misc
+          url=post.url %}
     {% endfor %}
 
      <hr class="featurette-divider">

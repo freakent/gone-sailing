@@ -1,5 +1,7 @@
 baseurl: /gone-sailing
 imagesurl: /gone-sailing/images/ 
+thumbsurl: /gone-sailing/assets/thumbs/
+sq500url: /gone-sailing/assets/500x500/
 collections_dir: collections
 collections:
   categories:

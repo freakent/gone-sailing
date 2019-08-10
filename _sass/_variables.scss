@@ -3,3 +3,6 @@ $custom-font-size: 20px;
 @import "fontawesome/fontawesome";
 @import "fontawesome/brands";
 @import "bootstrap/variables";
+$link-color: $dark;
+$link-hover-color: lighten($link-color, 50%);
+$link-hover-decoration: none;
