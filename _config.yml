@@ -1,8 +1,8 @@
 name: Gone Sailing
-baseurl: /gone-sailing
-imagesurl: /gone-sailing/images/ 
-thumbsurl: /gone-sailing/assets/thumbs/
-sq500url: /gone-sailing/assets/500x500/
+baseurl: /
+imagesurl: /images/ 
+thumbsurl: /assets/thumbs/
+sq500url: /assets/500x500/
 
 collections_dir: collections
 collections:
