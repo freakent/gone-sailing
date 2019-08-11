@@ -10,8 +10,13 @@
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{site.baseurl}}/assets/main.css">
-
-    <title>Hello, world!</title>
+    {% assign title = [site.name, page.title] %}
+    <title>
+      {{ site.name }} 
+      {% if page.title %}
+        {{ page.title | prepend:' - ' }}
+      {% endif %}
+    </title>
   </head>
   <body>
     <script type="text/javascript" src="{{site.baseurl}}/assets/vendor/jquery.slim.min.js"></script>
