@@ -7,7 +7,7 @@
           <h2 class="featurette-heading">{{ include.heading }} <small class="text-muted">{{ include.subheading }}</small></h2>
       </a>
     <p class="lead">{{ include.body }}</p>
-    <p><em>{{ include.date | date_to_long_string: "ordinal" }}</em></p>
+    <p><em>{{ include.misc }}</em></p>
     <p><a class="btn btn-secondary" href="{{ site.baseurl | append:include.url }}" role="button">read more &raquo;</a></p>
   </div>
   <div class="col-md-5 {% cycle 'order-md-2', 'order-md-1' %}">
