@@ -27,11 +27,12 @@ layout: default
               <div class="col-xl-3 col-md-4 col-sm-6">
                 {% include card.html 
                   heading=post.title
-                  image=post_image_in_folder
+                  image=post_image_url
                   body=post.excerpt 
                   misc=post_date_long
                   link=post.url
                 %}
+                {{ post_image_url }}
               </div>
             {% else %}
             <div class="col">

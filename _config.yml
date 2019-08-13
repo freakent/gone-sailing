@@ -4,6 +4,7 @@ imagesurl: https://dpyyvkdkr8dej.cloudfront.net/images
 thumbsurl: https://dpyyvkdkr8dej.cloudfront.net/thumbs
 sq500url:  https://dpyyvkdkr8dej.cloudfront.net/500x500
 s3url: https://gone-sailing.s3.eu-west-2.amazonaws.com
+cdnurl: https://dpyyvkdkr8dej.cloudfront.net
 
 collections_dir: collections
 collections:
@@ -18,6 +19,13 @@ defaults:
       type: "post-categories"
     values:
       layout: category_page
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post_page
+      content_baseurl: https://dpyyvkdkr8dej.cloudfront.net
 
 
 exclude: [

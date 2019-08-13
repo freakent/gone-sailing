@@ -1,5 +1,3 @@
-{% assign src = include.src | prepend:include.base %}
-{% if include.src contains "https" %}
-    {% assign src = include.src %}
-{% endif %}
+{% assign format = include.format | default: "images" %}
+{% assign src = include.src | replace: ":format", format %}
 <img class="{{ include.class }}" src="{{ src }}" alt="{{ include.alt }}" style="max-height: 500px; object-fit: cover;">

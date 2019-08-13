@@ -2,3 +2,4 @@
 {% assign post_date_long = post.date | date_to_long_string: "ordinal" %}
 {% assign post_images_folder = post.date | date: '%Y-%m-%d-' | prepend: "/posts/" | append: post.slug %}
 {% assign post_image_in_folder = post_images_folder | append: "/" | append: post.image %} 
+{% assign post_image_url = post.content_baseurl | append:"/:format" | append: post_image_in_folder %}
