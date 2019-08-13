@@ -1,8 +1,9 @@
 name: Gone Sailing
 baseurl: 
-imagesurl: /images/ 
-thumbsurl: /assets/thumbs/
-sq500url: /assets/500x500/
+imagesurl: https://dpyyvkdkr8dej.cloudfront.net/images
+thumbsurl: https://dpyyvkdkr8dej.cloudfront.net/thumbs
+sq500url:  https://dpyyvkdkr8dej.cloudfront.net/500x500
+s3url: https://gone-sailing.s3.eu-west-2.amazonaws.com
 
 collections_dir: collections
 collections:

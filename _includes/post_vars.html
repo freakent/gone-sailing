@@ -1,0 +1,3 @@
+{% assign post_tags = post.tags | join:" ▪︎ " %}
+{% assign post_images_folder = post.date | date: '%Y-%m-%d-' | prepend: "/posts/" | append: post.slug %}
+{% assign post_image_in_folder = post_images_folder | append: "/" | append: post.image %} 

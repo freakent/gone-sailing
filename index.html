@@ -23,7 +23,7 @@ layout: front_page
 
       <div class="col-lg-4">
           <a href="{{ site.baseurl }}{% link _post-categories/cruising.md %}">
-            <img class="rounded-circle" src="{{ site.sq500url | append:'/beaulieu-river.jpg' }}" alt="Generic placeholder image" width="140" height="140">
+            <img class="rounded-circle" src="{{ site.thumbsurl | append:'/beaulieu-river.jpg' }}" alt="Generic placeholder image" width="140" height="140">
           </a>          
          <h2>Cruising</h2>
          <p>The reason for doing what we do. Nothing better than visiting wonderful new places and
@@ -33,7 +33,7 @@ layout: front_page
 
        <div class="col-lg-4">
           <a href="{{ site.baseurl }}{% link _post-categories/boat-jobs.md %}">
-            <img class="rounded-circle" src="{{ site.sq500url | append:'/engine.jpg' }}" alt="Generic placeholder image" width="140" height="140">
+            <img class="rounded-circle" src="{{ site.thumbsurl | append:'/engine.jpg' }}" alt="Generic placeholder image" width="140" height="140">
           </a>
          <h2>Boat Jobs</h2>
          <p>
@@ -45,7 +45,7 @@ layout: front_page
 
        <div class="col-lg-4">
         <a href="{{ site.baseurl }}{% link _post-categories/boat-buying.md %}">
-          <img class="rounded-circle" src="{{ site.imagesurl | append:'/2018/09/03/anika-launch-day.png' }}" alt="Generic placeholder image" width="140" height="140">
+          <img class="rounded-circle" src="{{ site.thumbsurl | append:'/anika-launch-day.jpg' }}" alt="Generic placeholder image" width="140" height="140">
         </a>
          <h2>Boat Buying</h2>
          <p>
@@ -60,16 +60,16 @@ layout: front_page
 
      <!-- START THE FEATURETTES -->
      {% assign sorted_posts = site.posts | sort:date | reverse %}
-    {% for post in sorted_posts limit:5 %}
-      {% capture misc %}
-      {{ post.date | date_to_long_string: "ordinal" }} | {{ post.categories }}
-      {% endcapture %}
+     {% for post in sorted_posts limit:5 %}
+
+      {%- include post_vars.html -%}
+
       {% include featurette.html 
           heading=post.title 
           subheading=post.subtitle 
           body=post.excerpt 
-          image=post.featurette_image 
-          misc=misc
+          image=post_image_in_folder
+          date=post.date 
           url=post.url %}
     {% endfor %}
 

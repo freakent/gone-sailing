@@ -7,13 +7,18 @@
           <h2 class="featurette-heading">{{ include.heading }} <small class="text-muted">{{ include.subheading }}</small></h2>
       </a>
     <p class="lead">{{ include.body }}</p>
-    <p><em>{{ include.misc }}</em></p>
+    <p><em>{{ include.date | date_to_long_string: "ordinal" }}</em></p>
     <p><a class="btn btn-secondary" href="{{ site.baseurl | append:include.url }}" role="button">read more &raquo;</a></p>
   </div>
   <div class="col-md-5 {% cycle 'order-md-2', 'order-md-1' %}">
     <a href="{{site.baseurl | append:include.url}}">
-    {% if include.image %}
-    <img class="featurette-image img-fluid mx-auto img-thumbnail rounded" src="{{ include.image | prepend:site.sq500url }}" alt="{{ include.heading }}">
+        <script>console.log('help! {{ include.image }}')</script>
+        {% if include.image %}
+    {% if include.image contains 'https' %}
+      <img class="featurette-image img-fluid mx-auto img-thumbnail rounded" src="{{ include.image }}" alt="{{ include.heading }}">
+      {% else %}
+      <img class="featurette-image img-fluid mx-auto img-thumbnail rounded" src="{{ include.image | prepend:site.sq500url }}" alt="{{ include.heading }}">
+      {% endif %}
     {% else %}
     <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
     {% endif %}

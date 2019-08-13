@@ -14,7 +14,9 @@ layout: default
       <main class="col offset-lg-3">
         <h1 class="text-uppercase">{{page.title}}</h1>
         <p class="font-italic">{{page.sub-title}}</p>
-        <img src="{{ site.imagesurl | append:page.primary_image}}" class="img-fluid mb-3">
+        {% assign name = page.date | date: '%Y-%m-%d-' | append: page.slug %}
+        {% assign image = site.imagesurl | append: "/posts/" | append: name | append: "/" | append: page.image %}        
+        <img src="{{ image }}" class="img-fluid mb-3">
         {{ content }}
       </main>
 

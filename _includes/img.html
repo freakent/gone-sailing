@@ -1,0 +1,5 @@
+{% assign src = include.src | prepend:include.path %}
+{% if include.src contains "https" %}
+    {% assign src = include.src %}
+{% endif %}
+<img class="{{ include.class }}" src="{{ src }}" alt="{{ include.alt }}" style="max-height: 500px; object-fit: cover;">

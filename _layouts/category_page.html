@@ -22,17 +22,16 @@ layout: default
         
             {% assign sorted_posts = site.categories[page.slug] | sorted:'date' | reversed %}
             {% for post in  sorted_posts %}
-
-              {% capture misc %}
-                {{ post.date | date_to_long_string: "ordinal" }}
-              {% endcapture %}
+              {% include post_vars.html %}
           
               <div class="col-xl-3 col-md-4 col-sm-6">
                 {% include card.html 
                   heading=post.title
-                  image=post.featurette_image
+                  image=post_image_in_folder
                   body=post.excerpt 
-                  misc=misc
+                  date=post.date
+                  category=post.category
+                  misc=post_tags
                   link=post.url
                 %}
               </div>

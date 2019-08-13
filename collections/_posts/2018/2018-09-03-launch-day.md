@@ -1,8 +1,9 @@
 ---
 layout: post_page
 categories: boat-buying
+tags: ['Hamble Point']
 title: Launch Day
-primary_image: 2018/09/03/anika-launch-day.png 
+image: anika-launch-day.png 
 featurette_image: 2018/09/03/anika-launch-day.png
 ---
 With the surveyors report and final negotiations completed, next step was to
