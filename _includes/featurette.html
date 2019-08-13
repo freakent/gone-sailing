@@ -12,7 +12,6 @@
   </div>
   <div class="col-md-5 {% cycle 'order-md-2', 'order-md-1' %}">
     <a href="{{site.baseurl | append:include.url}}">
-        <script>console.log('help! {{ include.image }}')</script>
         {% if include.image %}
     {% if include.image contains 'https' %}
       <img class="featurette-image img-fluid mx-auto img-thumbnail rounded" src="{{ include.image }}" alt="{{ include.heading }}">
