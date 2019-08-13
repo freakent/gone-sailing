@@ -13,11 +13,7 @@
   <div class="col-md-5 {% cycle 'order-md-2', 'order-md-1' %}">
     <a href="{{site.baseurl | append:include.url}}">
         {% if include.image %}
-    {% if include.image contains 'https' %}
-      <img class="featurette-image img-fluid mx-auto img-thumbnail rounded" src="{{ include.image }}" alt="{{ include.heading }}">
-      {% else %}
-      <img class="featurette-image img-fluid mx-auto img-thumbnail rounded" src="{{ include.image | prepend:site.sq500url }}" alt="{{ include.heading }}">
-      {% endif %}
+          {% include img.html class="featurette-image img-fluid mx-auto img-thumbnail rounded" src=include.image format="500x500" alt=include.heading %}
     {% else %}
     <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
     {% endif %}

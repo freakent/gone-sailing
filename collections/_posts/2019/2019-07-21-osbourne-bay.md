@@ -13,7 +13,4 @@ An excellent day of firsts; first time we’ve anchored in Osborne Bay on the IO
 
 That IOW mud was hard to shift off the anchor! 
 
-{{ page.content_baseurl }}
-
-{{ url }}
 
