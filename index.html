@@ -62,13 +62,14 @@ layout: front_page
      {% assign sorted_posts = site.posts | sort:date | reverse %}
      {% for post in sorted_posts limit:5 %}
 
-      {%- include post_vars.html -%}
+      {%- include post_vars.html obj=post -%}
 
       {% include featurette.html 
           heading=post.title 
           subheading=post.subtitle 
           body=post.excerpt 
-          image=post_image_url
+          content_baseurl=post.content_baseurl
+          image=post_image
           misc=post_date_long 
           url=post.url %}
     {% endfor %}
