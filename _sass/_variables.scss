@@ -1,8 +1,10 @@
-$fa-font-path: "./vendor/fontawesome";
 $custom-font-size: 20px;
+$link-color: #6c757d; // $grey-600;
+$link-hover-decoration: none;
+$navbar-dark-hover-color:#fff;  // $white;
+$fa-font-path: "./vendor/fontawesome";
 @import "fontawesome/fontawesome";
 @import "fontawesome/brands";
 @import "bootstrap/variables";
-$link-color: $dark;
-$link-hover-color: lighten($link-color, 50%);
-$link-hover-decoration: none;
+
+//$link-hover-color: darken($link-color, 50%);

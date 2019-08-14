@@ -29,6 +29,12 @@ body {
   font-family: 'Permanent Marker', cursive;
 }
 
+/* card components 
+---------------------------------------------------*/
+div.card:hover {
+  border-color: $gray-500;
+}
+
 /* front-page
 -------------------------------------------------- */
 body, html {
