@@ -37,7 +37,8 @@ exclude: [
   "Gemfile.lock",
   "gulpfile.js",
   "gulpfile3x.js",
-  "readme.md"
+  "readme.md",
+  "studio"
 ]
 include: [
   "/assets/vendor/*.js"
