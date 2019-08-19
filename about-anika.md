@@ -4,7 +4,7 @@ title: About "S/Y Anika"
 sub-title: >
     This is Anika, our 2003 Najad 400 sailing yacht  
 content_baseurl: /content
-banner-image: /about-anika/IMG_5369.jpg
+banner-image: /about-anika/IMG_5369_SQ.jpg
 ---
 ## History
 Anika was built in 2003 by Najad Yachts of Sweden. We took ownership of Anika in September 2018 at Hamble Point Marina, near Southampton.  She is currently berthed on the River Hamble.
