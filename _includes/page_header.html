@@ -70,7 +70,7 @@
 
   function scrollFunction() {
     if ("{{page.layout}}" == "front_page") {
-      //document.getElementById("debug").innerText = document.documentElement.scrollTop
+      document.getElementById("debug").innerText = document.documentElement.scrollTop + ", " + document.documentElement.scrollTop
 
       if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         navbar_white()
