@@ -12,6 +12,10 @@ collections:
   post-categories:
     output: true
     permalink: /:title/index:output_ext
+  visitors:
+    output: true
+    permalink: /visitor-:slug:output_ext
+
 
 defaults:
   -

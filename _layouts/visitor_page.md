@@ -5,7 +5,7 @@ layout: content_page
 
 {% capture md %}
 ## What to expect
-{% if page.visitor-type == 'overnight' %}
+{% if page.slug == 'overnight' %}
 Living on a boat, even for just a couple of days, is an incredibly fun but different kind of experience. Our water usage, power conservation and toilet procedures maybe a little different to what you are used to. As long as you don’t mind adapting to this style of living for the time you are on board, we think you will really enjoy it.
 
 Once we leave our home berth on the River Hamble we will be sailing either to other marinas or to quiet and picturesque anchorages. Sometimes there are facilities ashore and sometimes we will be cooking and entertaining ourselves on board.  We’ll likely discuss food and drink provisioning with you well before you come on board. Even if we dine ashore we want to make sure there is sufficient food, drink and snacks to everyone’s liking on board. 
@@ -29,7 +29,7 @@ _Anika_ has beautiful wooden decks and wood floors down below, so we’d appreci
 #### Sun protection
 Hopefully we will be outside in the sunshine most of the time we are sailing. A hat is always a good idea, either to protect you from the sun or keep the rain out of your eyes, just make sure it won’t blow off your head in the breeze. Don’t forget sun cream and your sun glasses.
 
-{% if page.visitor-type == 'overnight' %}
+{% if page.slug == 'overnight' %}
 #### Bags & Suitcases
 Hard sided suitcases or wheeled trollies are impossible to store on a boat. Soft sided holdalls can be folded and stuffed into suitable spaces and are much more practical.
 
