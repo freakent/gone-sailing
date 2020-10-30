@@ -2,3 +2,5 @@
 _site
 node_modules
 studio
+.jekyll-cache
+.DS_Store

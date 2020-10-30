@@ -6,4 +6,7 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 # gem "rails"
 
-gem "jekyll", "~> 3.8"
+#gem "jekyll", "~> 4.0"
+#gem "github-pages", "~> 3.9.0", group: :jekyll_plugins
+gem "jekyll", "~> 3.9.0"
+gem "kramdown-parser-gfm"
