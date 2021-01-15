@@ -76,9 +76,37 @@ function generate500x500() {
     .pipe(debug({title: 'New 500x500'}))
 }
 
+function generateStudioThumbs() {
+  const local_thumbs = "./studio/thumbs/"
+  return src('./studio/images/**/*.{jpg,jpeg,png}')
+    .pipe(changed(local_thumbs))
+    .pipe(imageResize({ imageMagick: true, height: 150, width: 150, crop:true, noProfile:true }))
+    .pipe(dest(local_thumbs))
+    .pipe(debug({title: 'New thumbnail'}))
+}
+
+function generateStudio250x250() {
+  const local_thumbs = "./studio/250x250/"
+  return src('./studio/images/**/*.{jpg,jpeg,png}')
+    .pipe(changed(local_thumbs))
+    .pipe(imageResize({ imageMagick: true, height: 250, width: 250, crop:true, noProfile:true }))
+    .pipe(dest(local_thumbs))
+    .pipe(debug({title: 'New 250x250'}))
+}
+
+function generateStudio500x500() {
+  const local_thumbs = "./studio/500x500/"
+  return src('./studio/images/**/*.{jpg,jpeg,png}')
+    .pipe(changed(local_thumbs))
+    .pipe(imageResize({ imageMagick: true, height: 500, width: 500, crop:true, noProfile:true }))
+    .pipe(dest(local_thumbs))
+    .pipe(debug({title: 'New 500x500'}))
+}
+
 //module.exports.default = series(parallel(generateThumbs, jekyllBuild), publishSite)
 module.exports.thumbs = parallel(generateThumbs, generate500x500)
 module.exports.build = parallel(jekyllBuild, generateThumbs)
 module.exports.assets = parallel(bootstrap_assets, fontawesome_assets)
 module.exports.default = module.exports.assets
 module.exports.test = fontawesome_assets
+module.exports.studio = parallel(generateStudioThumbs, generateStudio250x250, generateStudio500x500)

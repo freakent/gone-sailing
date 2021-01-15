@@ -1,0 +1,52 @@
+---
+layout: default
+---
+<main role="main">
+
+  <div class="container" style="margin-top:80px;">
+    
+    <div class="row">
+
+      <table class="table table-sm"> 
+        <thead>
+          <tr>
+            <th>Page</th>
+            <th>Title / Sub-Title</th>
+            <th>Categories</th>
+            <th>Tags</th>
+            <th>Image</th>
+            <th>CMS</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for page in site.posts %}
+        {% include post_vars.html obj=page %}
+        
+        <tr class="small">
+          <td><small>{{ page.path }}</small></td>
+          <td>{{ page.title }}<br/><small>{{ page.subtitle }}</small></td>
+          <td>{{ page.categories }}</td>
+          <td>{{ post_tags }}</td>
+          <td><small>{{ post_image }}</small></td>
+          <td>{{page.content_baseurl}}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+      </table>
+        
+    </div>
+
+  </div> <!-- container -->
+
+</main>
+
+
+
+  <style>
+    :target::before {
+      content: "";
+      display: block;
+      height: 60px; /* fixed header height*/
+      margin: -60px 0 0; /* negative fixed header height */
+    }
+  </style>

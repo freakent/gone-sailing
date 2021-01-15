@@ -2,10 +2,21 @@
 layout: default
 ---
 {% include post_vars.html obj=page %}
+
 <div class="container" style="margin-top:80px;">
     <div class="row">
 
-      <div class="d-none d-print-none d-lg-block col-lg-3 fixed-top" id="sidebar" style="margin-top:80px" >
+
+      <main class="col col-lg-8">
+        <h1 style="font-family: 'Permanent Marker', cursive;">{{page.title}}</h1>
+        <h2 class="font-weight-light">{{page.subtitle}}</h2>
+        <p class="font-small">{{ post_date_long }} by {{ page.author | default: 'Martin' }}</p>
+        {% include img.html class="img-fluid mb-3" src=post_image baseurl=page.content_baseurl format="250x250" alt=page.title %}
+
+        {{ content }}
+      </main>
+
+      <div class="d-none d-print-none d-lg-block col offset-lg-8 fixed-top pl-0" id="sidebar" style="margin-top:80px" >
         <div>
           {{post_tags}}
         </div>
@@ -13,18 +24,9 @@ layout: default
           <div id="dynamic-section">
             <!-- <li class="list-group-item">What to expect</li> -->
           </div>
-          <a href="#" class="list-group-item list-group-item-action">back to top</a> 
+          <a href="#" class="list-group-item list-group-item-action p-2">back to top</a> 
         </div>
       </div>
-
-      <main class="col offset-lg-3">
-        <h1 class="text-uppercase">{{page.title}}</h1>
-        <p class="font-italic">{{page.sub-title}}</p>
-        {% assign name = page.date | date: '%Y-%m-%d-' | append: page.slug %}
-        {% assign image = site.imagesurl | append: "/posts/" | append: name | append: "/" | append: page.image %}        
-        <img src="{{ image }}" class="img-fluid mb-3">
-        {{ content }}
-      </main>
 
     </div>
 
@@ -41,8 +43,8 @@ layout: default
 
   <script>
     $(document).ready(function(){
-      $("h2").each(function(index){
-        $('#sidebar .list-group #dynamic-section').append('<a class="list-group-item list-group-item-action" href="#'   
+      $("h3").each(function(index){
+        $('#sidebar .list-group #dynamic-section').append('<a class="list-group-item list-group-item-action p-2 font-weight-light text-truncate" href="#'   
           + $(this).attr('id') 
           + '">' 
           + $(this).text() + "</a>")

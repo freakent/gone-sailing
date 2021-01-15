@@ -2,7 +2,8 @@
 layout: post_page
 categories: cruising
 tags: [Osbourne Bay, IOW]
-title: Our first trip to Osbourne Bay
+title: Osbourne Bay, IOW
+subtitle: Our first trip to Osbourne Bay
 content_baseurl: /content
 primary_image: 2019/07/21/IMG_5695.jpg
 Xfeaturette_image: https://live.staticflickr.com/65535/48509937067_b27c1d7a8b_d.jpg

@@ -1,4 +1,10 @@
 {% assign post_tags = include.obj.tags | join:" &middot; " %}
 {% assign post_date_long = include.obj.date | date_to_long_string: "ordinal" %}
-{% assign post_images_folder = include.obj.date | date: '%Y-%m-%d-' | prepend: "/posts/" | append: post.slug %}
-{% assign post_image = post_images_folder | append: "/" | append: post.image %} 
+{% assign post_images_folder = include.obj.date | date: '%Y-%m-%d-' | prepend: "/posts/" | append: include.obj.slug %}
+{% assign post_image = post_images_folder | append: "/" | append: include.obj.image %} 
+<!-- 
+    post_tags = {{ post_tags }}
+    post_date_long = {{ post_date_long }}
+    post_images_folder {{ post_images_folder }}
+    post_image = {{ post_image }}
+-->
