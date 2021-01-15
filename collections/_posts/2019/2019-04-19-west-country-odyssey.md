@@ -4,7 +4,7 @@ categories: cruising
 tags: [Hamble, Yarmouth, IOW, West Country]
 title: Our West Country Odyssey 
 subtitle: The River Hamble to Fowey, Cornwall and back
-content_baseurl: /studio
+#content_baseurl: /studio
 image: IMG_5108.jpg
 images:
     - IMG_5108.jpeg
