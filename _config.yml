@@ -12,6 +12,9 @@ collections:
   post-categories:
     output: true
     permalink: /:title/index:output_ext
+  #posts:
+   # output: true
+    #permalink: /posts/:year-:month-:day-:title:output_ext
   visitors:
     output: true
     permalink: /visitor-:slug:output_ext

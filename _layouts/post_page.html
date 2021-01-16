@@ -12,7 +12,6 @@ layout: default
         <h2 class="font-weight-light">{{page.subtitle}}</h2>
         <p class="font-small">{{ post_date_long }} {{ page.date | timeago }} by {{ page.author | default: 'Martin' }}</p>
         {% include img.html class="img-fluid mb-3" src=post_image baseurl=page.content_baseurl format="250x250" alt=page.title %}
-
         {{ content }}
       </main>
 

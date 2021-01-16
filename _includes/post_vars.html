@@ -2,6 +2,7 @@
 {% assign post_date_long = include.obj.date | date_to_long_string: "ordinal" %}
 {% assign post_images_folder = include.obj.date | date: '%Y-%m-%d-' | prepend: "/posts/" | append: include.obj.slug %}
 {% assign post_image = post_images_folder | append: "/" | append: include.obj.image %} 
+{% assign base_path = include.obj.date | date: '%Y-%m-%d-' | prepend: "/posts/" | append: include.obj.slug %}
 <!-- 
     post_tags = {{ post_tags }}
     post_date_long = {{ post_date_long }}

@@ -14,13 +14,18 @@ images:
 ---
 This was our first opportunity to take Anika on a longer cruise. With all the Brexit stuff going on we decided to head west along the English south coast and just see how far we get before having to turn back east towards home. 
 
+![alt text][test-image]
+
+page path {{ page.path }}
+{{ "IMG_5108.jpg" | content_url:"500x500" }}
+
 Thanks to a combination of special public holidays and time off from work we had a total of 18 days for our first West Country Odyssey.
 
 ### Day 1 - River Hamble to Yarmouth, IOW
 And we’re off! After what feels like weeks of preparation we are ready for day 1 of our “West Coast Odyssey”. 
 We’re starting off with a short sail from the Hamble River to Yarmouth, Isle of Wight. Very busy on Southampton Water with a big cruise ship to avoid. Ended the day moored up on buoy outside Yarmouth, enjoying watching people trying to pick up buoys. 
 
-![alt text][image-1]![alt text][image-2]![alt text][image-2]
+![alt text][image-1]![alt text][image-2]![alt text][image-3]
 
 ### Day 2 - Yarmouth, IOW to Poole Harbour
 
@@ -37,6 +42,8 @@ We’re starting off with a short sail from the Hamble River to Yarmouth, Isle o
 ### Day 17 - Weymouth to Poole Hbr
 ### Day 18 - Poole Harbour to River Hamble
 
-[image-1]: /studio/250x250/posts/2019-04-19-west-country-odyssey/IMG_5118.jpeg "Moored up outside Yarmouth harbour"
-[image-2]: /studio/250x250/posts/2019-04-19-west-country-odyssey/IMG_5119.jpeg "Someone didn't check the tides"
-[image-3]: /studio/250x250/posts/2019-04-19-west-country-odyssey/IMG_5108.jpeg "Yarmouth at sunset"
+[image-1]: {{ 'IMG_5118.jpeg' | content_url:"500x500" }} "Moored up outside Yarmouth harbour"
+[image-2]: {{ 'IMG_5119.jpeg' | content_url:"500x500" }} "Someone didn't check the tides"
+[image-3]: {{ 'IMG_5108.jpg' | content_url:"500x500" }} "Yarmouth at sunset"
+
+[test-image]: {{ 'IMG_5118.jpeg' | content_url:'500x500'}}
