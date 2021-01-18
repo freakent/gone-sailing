@@ -1,6 +1,7 @@
 <div class="card">
     <a href="{{site.baseurl | append:include.link}}">
-    {% include img.html class="card-img-top" src=include.image baseurl=include.content_baseurl format="500x500" alt="Card image cap" %}
+    <!-- include img.html class="card-img-top" src=include.image baseurl=include.content_baseurl format="500x500" alt="Card image cap" -->
+    <img class="card-img-top" src="{{ include.image }}" alt="{{ include.image.title }}">
     <div class="card-body">
         <h5 class="card-title">{{ include.heading }}</h5>
         <p class="card-text">{{ include.body }}</p>

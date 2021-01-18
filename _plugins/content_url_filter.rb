@@ -1,8 +1,8 @@
 module Jekyll
     module ContentURLFilter
-      def content_url(input, format)
-        base_url = @context.registers[:page]['content_baseurl'] || @context.registers[:site].config['cdnurl']
-        source = @context.registers[:page]['path'] 
+      def content_url(input, format, page=@context.registers[:page])
+        base_url = page['content_baseurl'] || @context.registers[:site].config['cdnurl']
+        source = page['content_path'] || page['path'] 
         dir = source.delete_suffix(File.extname(source)).delete_prefix("_")
         "#{base_url}/#{dir}/#{format}/#{input}?#{Time.now.to_i}"
       end

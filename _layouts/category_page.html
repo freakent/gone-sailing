@@ -23,12 +23,12 @@ layout: default
             {% assign sorted_posts = site.categories[page.slug] | sorted:'date' | reversed %}
             {% for post in  sorted_posts %}
               {%- include post_vars.html obj=post -%}
+              {% assign image_url = post.images[0].file | content_url:'500x500', post %}
           
               <div class="col-xl-3 col-md-4 col-sm-6">
                 {% include card.html 
                   heading=post.title
-                  image=post_image
-                  content_baseurl = post.content_baseurl
+                  image=image_url
                   body=post.excerpt 
                   misc=post_date_long
                   link=post.url

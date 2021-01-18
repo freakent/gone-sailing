@@ -1,15 +1,12 @@
 ---
-layout: post_page
 categories: boat-jobs
 tags: [teak deck, Semco]
 title: Project Teak Clean
 author: Martin
 content_baseurl: /studio
-primary_image: IMG_4996.jpeg
-Xprimary_image: 2019/07/21/IMG_5695.jpg
-Xfeaturette_image: https://live.staticflickr.com/65535/48509937067_b27c1d7a8b_d.jpg
-Yfeaturette_image: https://res.cloudinary.com/gone-sailing/image/upload/ar_1:1,c_lfill,g_auto,q_auto,w_500/v1565598667/IMG_5695_woresq.jpg
-image: IMG_4996.jpeg
+images: 
+    - file: IMG_4996.jpeg
+      tile: Beautiful teak decks
 ---
 We often get lots of compliments on Anika’s deck and people ask how we did it, so here goes. 
 

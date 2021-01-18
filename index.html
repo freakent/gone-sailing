@@ -1,5 +1,6 @@
 ---
 layout: front_page
+content_path: site
 ---
 <div class="front-page">
   <div class="text-light d-flex h-100 align-items-end justify-content-center">
@@ -24,7 +25,7 @@ layout: front_page
 
       <div class="col-lg-4">
           <a href="{{ site.baseurl }}{% link _post-categories/cruising.md %}">
-            <img class="rounded-circle" src="{{ site.thumbsurl | append:'/beaulieu-river.jpg' }}" alt="Generic placeholder image" width="140" height="140">
+            <img class="rounded-circle" src="{{ 'beaulieu-river.jpg' | content_url:'thumbs' }}" alt="Generic placeholder image" width="140" height="140">
           </a>          
          <h2>Cruising</h2>
          <p>The reason for doing what we do. Nothing better than visiting wonderful new places and
@@ -34,19 +35,19 @@ layout: front_page
 
        <div class="col-lg-4">
           <a href="{{ site.baseurl }}{% link _post-categories/boat-jobs.md %}">
-            <img class="rounded-circle" src="{{ site.thumbsurl | append:'/engine.jpg' }}" alt="Generic placeholder image" width="140" height="140">
+            <img class="rounded-circle" src="{{ 'engine.jpg' | content_url:'thumbs' }}" alt="Generic placeholder image" width="140" height="140">
           </a>
          <h2>Boat Jobs</h2>
          <p>
            It's not all cocktails and sunshine, sometimes you have to get your
            hands dirty. We try to do as much DIY boat work as we can.
          </p>
-         <p><a class="btn btn-secondary" href="{{ site.sq500url }}{% link _post-categories/boat-jobs.md %}" role="button">View stories &raquo;</a></p>
+         <p><a class="btn btn-secondary" href="{{ site.baseurl }}{% link _post-categories/boat-jobs.md %}" role="button">View stories &raquo;</a></p>
        </div><!-- /.col-lg-4 -->
 
        <div class="col-lg-4">
         <a href="{{ site.baseurl }}{% link _post-categories/boat-buying.md %}">
-          <img class="rounded-circle" src="{{ site.thumbsurl | append:'/anika-launch-day.jpg' }}" alt="Generic placeholder image" width="140" height="140">
+          <img class="rounded-circle" src="{{ 'anika-launch-day.jpg' | content_url:'thumbs' }}" alt="Generic placeholder image" width="140" height="140">
         </a>
          <h2>Boat Buying</h2>
          <p>

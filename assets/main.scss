@@ -42,7 +42,7 @@ body, html {
 }
 
 .front-page {
-  background-image: url({{ site.cdnurl | append: "/images/IMG_4498.gif" }});
+  background-image: url({{ site.cdnurl | append: "/site/originals/IMG_4498.gif" }});
   height: 100%;
   background-position: bottom;
   background-repeat: no-repeat;
