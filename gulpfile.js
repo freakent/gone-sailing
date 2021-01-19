@@ -2,7 +2,11 @@ const {src, dest, series, parallel} = require('gulp')
 const changed = require('gulp-changed')
 const debug = require('gulp-debug')
 const imageResize = require('gulp-image-resize')
+const rename = require('gulp-rename')
 const { exec } = require('child_process')
+
+const studio_originals = './studio/**/originals/*.{jpg,jpeg,png}'
+const studio_dest = './studio'
 
 function jekyllBuild(cb) {
   exec('jekyll build', (error, stdout, stderr) => {
@@ -77,29 +81,29 @@ function generate500x500() {
 }
 
 function generateStudioThumbs() {
-  const local_thumbs = "./studio/thumbs/"
-  return src('./studio/images/**/*.{jpg,jpeg,png}')
-    .pipe(changed(local_thumbs))
+  return src(studio_originals)
+    .pipe(rename( (path) => { path.dirname = path.dirname.replace('/originals', '/thumbs') }))
+    .pipe(changed(studio_dest))
     .pipe(imageResize({ imageMagick: true, height: 150, width: 150, crop:true, noProfile:true }))
-    .pipe(dest(local_thumbs))
+    .pipe(dest(studio_dest))
     .pipe(debug({title: 'New thumbnail'}))
 }
 
 function generateStudio250x250() {
-  const local_thumbs = "./studio/250x250/"
-  return src('./studio/images/**/*.{jpg,jpeg,png}')
-    .pipe(changed(local_thumbs))
+  return src(studio_originals)
+    .pipe(rename( (path) => { path.dirname = path.dirname.replace('/originals', '/250x250') }))
+    .pipe(changed(studio_dest))
     .pipe(imageResize({ imageMagick: true, height: 250, width: 250, crop:true, noProfile:true }))
-    .pipe(dest(local_thumbs))
+    .pipe(dest(studio_dest))
     .pipe(debug({title: 'New 250x250'}))
 }
 
 function generateStudio500x500() {
-  const local_thumbs = "./studio/500x500/"
-  return src('./studio/images/**/*.{jpg,jpeg,png}')
-    .pipe(changed(local_thumbs))
+  return src(studio_originals)
+    .pipe(rename( (path) => { path.dirname = path.dirname.replace('/originals', '/500x500') }))
+    .pipe(changed(studio_dest))
     .pipe(imageResize({ imageMagick: true, height: 500, width: 500, crop:true, noProfile:true }))
-    .pipe(dest(local_thumbs))
+    .pipe(dest(studio_dest))
     .pipe(debug({title: 'New 500x500'}))
 }
 
@@ -110,3 +114,4 @@ module.exports.assets = parallel(bootstrap_assets, fontawesome_assets)
 module.exports.default = module.exports.assets
 module.exports.test = fontawesome_assets
 module.exports.studio = parallel(generateStudioThumbs, generateStudio250x250, generateStudio500x500)
+module.exports.studio_thumbs = generateStudioThumbs

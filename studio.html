@@ -10,10 +10,10 @@ layout: default
       <table class="table table-sm"> 
         <thead>
           <tr>
-            <th>Page</th>
             <th>Title / Sub-Title</th>
             <th>Categories</th>
-            <th>Tags</th>
+            <th>Page</th>
+            <!-- <th>Tags</th> -->
             <th>Image</th>
             <th>CMS</th>
           </tr>
@@ -23,10 +23,10 @@ layout: default
         {% include post_vars.html obj=page %}
         
         <tr class="small">
-          <td><small>{{ page.path }}</small></td>
           <td>{{ page.title }}<br/><small>{{ page.subtitle }}</small></td>
           <td>{{ page.categories }}</td>
-          <td>{{ post_tags }}</td>
+          <td><small>{{ page.path }}</small></td>
+         <!-- <td>{{ post_tags }}</td> -->
           <td><small>{{ post_image }}</small></td>
           <td>{{page.content_baseurl}}</td>
         </tr>

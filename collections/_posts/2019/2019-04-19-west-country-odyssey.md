@@ -1,11 +1,9 @@
 ---
-xlayout: responsive_post_page
 categories: cruising
 tags: [Hamble, Yarmouth, IOW, West Country]
 title: Our West Country Odyssey 
-subtitle: The River Hamble to Fowey, Cornwall and back
+subtitle: From the river Hamble to Fowey, Cornwall and back
 #content_baseurl: /studio
-image: IMG_5108.jpg
 images:
     - file: IMG_5108.jpg
       title: Setting off down the Hamble
@@ -24,7 +22,7 @@ Thanks to a combination of special public holidays and time off from work we had
 And we’re off! After what feels like weeks of preparation we are ready for day 1 of our “West Coast Odyssey”. 
 We’re starting off with a short sail from the Hamble River to Yarmouth, Isle of Wight. Very busy on Southampton Water with a big cruise ship to avoid. Ended the day moored up on buoy outside Yarmouth, enjoying watching people trying to pick up buoys. It's always a great spectator sport.
 
-![image-1] ![image-2] ![image-3]
+![image-1]{: .img-thumbnail} ![image-2]{: .img-thumbnail} ![image-3]{: .img-thumbnail}
 
 ### Day 2 - Yarmouth, IOW to Poole Harbour
 

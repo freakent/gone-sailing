@@ -65,13 +65,13 @@ content_path: site
      {% for post in sorted_posts limit:5 %}
 
       {%- include post_vars.html obj=post -%}
+      {%- assign image = post.images[0].file | content_url:"500x500",post  %} 
 
       {% include featurette.html 
           heading=post.title 
           subheading=post.subtitle 
           body=post.excerpt 
-          content_baseurl=post.content_baseurl
-          image=post_image
+          image= image
           misc=post_date_long 
           url=post.url %}
     {% endfor %}
