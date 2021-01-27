@@ -2,7 +2,7 @@
 categories: boat-jobs
 tags: [teak deck, Semco]
 title: Project Teak Clean
-subtitle: Making Anika's decks look like new
+subtitle: Making Anika's decks look like new again
 author: Martin
 Xcontent_baseurl: /studio
 images: 

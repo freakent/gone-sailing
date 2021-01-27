@@ -1,7 +1,7 @@
 ---
 categories: cruising
 tags: [Newtown Creek, New Year]
-title: New Year in Newtown Creek
+title: New Year in Newtown Creek, IOW
 images: 
     - file: IMG_4704.jpg
       title: Good morning, 2019
