@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/x-icon" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/favicon.ico?1000">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="https://dpyyvkdkr8dej.cloudfront.net/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/favicon-16x16.png">
+<link rel="manifest" href="/content/favicons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="https://dpyyvkdkr8dej.cloudfront.net/favicons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/assets/main.css">
+    <title>
+      Gone Sailing 
+      
+    </title>
+  </head>
+  <body>
+    <script type="text/javascript" src="/assets/vendor/jquery.slim.min.js"></script>
+    
+
+<header>
+   <nav id="navbar" class="navbar navbar-expand-md fixed-top navbar-dark bg-transparent">
+     <div class="container">
+     <a class="navbar-brand" href="/">Gone Sailing</a>
+    
+     <button id="toggled" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+    
+     <div class="collapse navbar-collapse justify-content-between " id="navbarCollapse">
+
+       <ul class="navbar-nav ml-auto">
+         <li class="nav-item" id="crew">
+           <a class="nav-link" href="#">Crew</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="/about-anika.html">Our Boat</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="/cruising/index.html">Cruising</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="/boat-jobs/index.html">Boat Jobs</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="/boat-buying/index.html">Boat Buying</a>
+         </li>
+        </ul>
+
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.instagram.com/mr.martin.jarvis/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow on Instagram">
+                  <span class="align-middle">
+                  <i id="ig-icon" class="fab fa-instagram fa-1x text-light"></i>
+                  <span class="d-md-none">
+                    Follow on Instagram
+                  </span>
+                </span>
+                </a>
+            </li>
+        </ul>
+
+      </div>
+    </div>
+   </nav>
+ </header>
+
+
+  <script>
+    var navbar = document.getElementById("navbar")
+    var ig_icon = document.getElementById("ig-icon")
+
+    function navbar_white() {
+      navbar.classList.remove("navbar-dark", "bg-transparent");
+      navbar.classList.add("navbar-light", "bg-white");
+      ig_icon.classList.remove("text-light");
+      ig_icon.classList.add("text-dark");
+    }
+
+    function navbar_transparent() {
+      navbar.classList.remove("navbar-light", "bg-white");
+      navbar.classList.add("navbar-dark", "bg-transparent");
+      ig_icon.classList.remove("text-dark");
+      ig_icon.classList.add("text-light");
+    }
+
+     
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      //document.getElementById("debug").innerText = document.documentElement.scrollTop + ", " + document.body.scrollTop
+
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        if (navbar.classList.contains('navbar-dark')) {
+          navbar_white()
+        }
+      } else {
+        if (navbar.classList.contains('navbar-light')) {
+          navbar_transparent()
+          $(".navbar-collapse").collapse('hide')
+        }
+      } 
+    }
+    
+  </script>
+  
+  <script>
+  $( document ).ready(function() {
+    $('.navbar-collapse').on('show.bs.collapse', function() {
+      navbar_white()
+    })
+
+  });
+  </script>
+
+ </script>
+
+    <div class="front-page">
+  <div class="text-light d-flex h-100 align-items-end justify-content-center">
+    <div class="hero">
+      <small class="small"><span id="debug"></span></small>
+      <h3>if you can't reach us we've probably</h3>
+      <h1>Gone Sailing !</h1>
+    </div>
+  </div>
+</div>
+
+ <main role="main">
+
+   <!-- Marketing messaging and featurettes
+   ================================================== -->
+   <!-- Wrap the rest of the page in another container to center all the content. -->
+
+   <div class="container marketing">
+
+     <!-- Three columns of text below the carousel -->
+     <div class="row">
+
+      <div class="col-lg-4">
+          <a href="/cruising/index.html">
+            <img class="rounded-circle" src="https://dpyyvkdkr8dej.cloudfront.net/site/site/thumbs/beaulieu-river.jpg?1611877907" alt="Generic placeholder image" width="140" height="140">
+          </a>          
+         <h2>Cruising</h2>
+         <p>The reason for doing what we do. Nothing better than visiting wonderful new places and
+           enjoying fun new experiences all by sailboat. </p>
+         <p><a class="btn btn-secondary" href="/cruising/index.html" role="button">View stories &raquo;</a></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <a href="/boat-jobs/index.html">
+            <img class="rounded-circle" src="https://dpyyvkdkr8dej.cloudfront.net/site/site/thumbs/engine.jpg?1611877907" alt="Generic placeholder image" width="140" height="140">
+          </a>
+         <h2>Boat Jobs</h2>
+         <p>
+           It's not all cocktails and sunshine, sometimes you have to get your
+           hands dirty. We try to do as much DIY boat work as we can.
+         </p>
+         <p><a class="btn btn-secondary" href="/boat-jobs/index.html" role="button">View stories &raquo;</a></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+        <a href="/boat-buying/index.html">
+          <img class="rounded-circle" src="https://dpyyvkdkr8dej.cloudfront.net/site/site/thumbs/anika-launch-day.jpg?1611877907" alt="Generic placeholder image" width="140" height="140">
+        </a>
+         <h2>Boat Buying</h2>
+         <p>
+           Buying a boat can be a scary process if you have never done it
+           before. We'll share our experiences and lessons learned with you.
+         </p>
+         <p><a class="btn btn-secondary" href="/boat-buying/index.html" role="button">View stories &raquo;</a></p>
+       </div><!-- /.col-lg-4 -->
+
+     </div><!-- /.row -->
+
+
+     <!-- START THE FEATURETTES -->
+     
+     
+
+
+ 
+
+<!-- 
+    post_tags = Osbourne Bay &middot; IOW
+    post_date_long = 21st July 2019
+    post_images_folder /posts/2019-07-21-osbourne-bay
+    post_image = /posts/2019-07-21-osbourne-bay/
+-->
+ 
+
+      
+<hr class="featurette-divider">
+
+<div class="row featurette">
+  <div class="col-md-7 order-md-1">
+      <a href="/cruising/2019/07/21/osbourne-bay.html">
+          <h2 class="featurette-heading">Osbourne Bay, IOW<br> <small class="text-muted">Our first trip to Osbourne Bay</small></h2>
+      </a>
+    <p class="lead"><p>An excellent day of firsts; first time we’ve anchored in Osborne Bay on the Isle-of-Wight, first time we’ve had to reef <em>Anika</em>’s main sail, first time out with all three vertical battens in the main.</p>
+</p>
+    <p><em>21st July 2019</em></p>
+    <p><a class="btn btn-secondary" href="/cruising/2019/07/21/osbourne-bay.html" role="button">read more &raquo;</a></p>
+  </div>
+  <div class="col-md-5 order-md-2">
+    <a href="/cruising/2019/07/21/osbourne-bay.html">
+        
+          <img class="featurette-image img-fluid mx-auto img-thumbnail rounded" src="https://dpyyvkdkr8dej.cloudfront.net/posts/2019/2019-07-21-osbourne-bay/500x500/IMG_5695.jpg?1611877907" alt="Osbourne Bay, IOW">
+    
+    </a>
+  </div>
+</div>
+
+    
+
+
+ 
+
+<!-- 
+    post_tags = Hamble &middot; Yarmouth &middot; IOW &middot; West Country
+    post_date_long = 19th April 2019
+    post_images_folder /posts/2019-04-19-west-country-odyssey
+    post_image = /posts/2019-04-19-west-country-odyssey/
+-->
+ 
+
+      
+<hr class="featurette-divider">
+
+<div class="row featurette">
+  <div class="col-md-7 order-md-2">
+      <a href="/cruising/2019/04/19/west-country-odyssey.html">
+          <h2 class="featurette-heading">Our West Country Odyssey<br> <small class="text-muted">From the river Hamble to Fowey, Cornwall and back</small></h2>
+      </a>
+    <p class="lead"><p>This was our first opportunity to take Anika on a longer cruise. With all the Brexit stuff going on we decided to head west along the English south coast and just see how far we get before having to turn back east towards home.</p>
+</p>
+    <p><em>19th April 2019</em></p>
+    <p><a class="btn btn-secondary" href="/cruising/2019/04/19/west-country-odyssey.html" role="button">read more &raquo;</a></p>
+  </div>
+  <div class="col-md-5 order-md-1">
+    <a href="/cruising/2019/04/19/west-country-odyssey.html">
+        
+          <img class="featurette-image img-fluid mx-auto img-thumbnail rounded" src="https://dpyyvkdkr8dej.cloudfront.net/posts/2019/2019-04-19-west-country-odyssey/500x500/IMG_5108.jpg?1611877907" alt="Our West Country Odyssey">
+    
+    </a>
+  </div>
+</div>
+
+    
+
+
+ 
+
+<!-- 
+    post_tags = teak deck &middot; Semco
+    post_date_long = 24th March 2019
+    post_images_folder /posts/2019-03-24-project-teak-clean
+    post_image = /posts/2019-03-24-project-teak-clean/
+-->
+ 
+
+      
+<hr class="featurette-divider">
+
+<div class="row featurette">
+  <div class="col-md-7 order-md-1">
+      <a href="/boat-jobs/2019/03/24/project-teak-clean.html">
+          <h2 class="featurette-heading">Project Teak Clean<br> <small class="text-muted">Making Anika's decks look like new again</small></h2>
+      </a>
+    <p class="lead"><p>We often get lots of compliments on Anika’s deck and people ask how we did it, so here goes.</p>
+</p>
+    <p><em>24th March 2019</em></p>
+    <p><a class="btn btn-secondary" href="/boat-jobs/2019/03/24/project-teak-clean.html" role="button">read more &raquo;</a></p>
+  </div>
+  <div class="col-md-5 order-md-2">
+    <a href="/boat-jobs/2019/03/24/project-teak-clean.html">
+        
+          <img class="featurette-image img-fluid mx-auto img-thumbnail rounded" src="https://dpyyvkdkr8dej.cloudfront.net/posts/2019/2019-03-24-project-teak-clean/500x500/IMG_5021.jpeg?1611877907" alt="Project Teak Clean">
+    
+    </a>
+  </div>
+</div>
+
+    
+
+
+ 
+
+<!-- 
+    post_tags = Newtown Creek &middot; New Year
+    post_date_long = 1st January 2019
+    post_images_folder /posts/2019-01-01-happy-new-year
+    post_image = /posts/2019-01-01-happy-new-year/
+-->
+ 
+
+      
+<hr class="featurette-divider">
+
+<div class="row featurette">
+  <div class="col-md-7 order-md-2">
+      <a href="/cruising/2019/01/01/happy-new-year.html">
+          <h2 class="featurette-heading">New Year in Newtown Creek, IOW<br> <small class="text-muted"></small></h2>
+      </a>
+    <p class="lead"><p>That’s another Christmas done. Our family has gone back home and Son is back at Uni,
+ready to celebrate the New Year with his student friends.</p>
+</p>
+    <p><em>1st January 2019</em></p>
+    <p><a class="btn btn-secondary" href="/cruising/2019/01/01/happy-new-year.html" role="button">read more &raquo;</a></p>
+  </div>
+  <div class="col-md-5 order-md-1">
+    <a href="/cruising/2019/01/01/happy-new-year.html">
+        
+          <img class="featurette-image img-fluid mx-auto img-thumbnail rounded" src="https://dpyyvkdkr8dej.cloudfront.net/posts/2019/2019-01-01-happy-new-year/500x500/IMG_4704.jpg?1611877907" alt="New Year in Newtown Creek, IOW">
+    
+    </a>
+  </div>
+</div>
+
+    
+
+
+ 
+
+<!-- 
+    post_tags = Cowes &middot; IOW &middot; Folly Inn
+    post_date_long = 7th September 2018
+    post_images_folder /posts/2018-09-07-the-folly
+    post_image = /posts/2018-09-07-the-folly/
+-->
+ 
+
+      
+<hr class="featurette-divider">
+
+<div class="row featurette">
+  <div class="col-md-7 order-md-1">
+      <a href="/cruising/2018/09/07/the-folly.html">
+          <h2 class="featurette-heading">First trip to The Folly Inn, Cowes<br> <small class="text-muted"></small></h2>
+      </a>
+    <p class="lead"><p>Our very first trip on <em>Anika</em> was to the very famous Folly Inn on the Medina River, just up river from Cowes on the Isle of White.</p>
+</p>
+    <p><em>7th September 2018</em></p>
+    <p><a class="btn btn-secondary" href="/cruising/2018/09/07/the-folly.html" role="button">read more &raquo;</a></p>
+  </div>
+  <div class="col-md-5 order-md-2">
+    <a href="/cruising/2018/09/07/the-folly.html">
+        
+          <img class="featurette-image img-fluid mx-auto img-thumbnail rounded" src="https://dpyyvkdkr8dej.cloudfront.net/posts/2018/2018-09-07-the-folly/500x500/IMG_4245.jpeg?1611877907" alt="First trip to The Folly Inn, Cowes">
+    
+    </a>
+  </div>
+</div>
+
+    
+
+<!--
+
+     <hr class="featurette-divider">
+
+     <div class="row featurette">
+       <div class="col-md-7">
+         <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+       </div>
+       <div class="col-md-5">
+         <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+       </div>
+     </div>
+
+     <hr class="featurette-divider">
+
+     <div class="row featurette">
+       <div class="col-md-7 order-md-2">
+         <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+       </div>
+       <div class="col-md-5 order-md-1">
+         <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+       </div>
+     </div>
+
+     <hr class="featurette-divider">
+
+     <div class="row featurette">
+       <div class="col-md-7">
+         <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+       </div>
+       <div class="col-md-5">
+         <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+       </div>
+     </div>
+
+     <hr class="featurette-divider">
+    -->
+
+     <!-- /END THE FEATURETTES -->
+
+   </div><!-- /.container -->
+
+ </main>
+
+
+    <!-- FOOTER -->
+<footer class="container">
+  <div class="row bg-secondary text-light mt-5 px-3 py-4">
+    <div class="col align-items-center">
+    <small>
+    <span class="float-right"><a href="#">Back to top</a></span>
+    <span>&copy; 2018-2021 Gone Sailing uk &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></span>
+  </small>
+</div>
+</div>
+  </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script type="text/javascript" src="/assets/vendor/jquery.slim.min.js"></script> -->
+    <script type="text/javascript" src="/assets/vendor/popper.min.js"></script>
+    <script type="text/javascript" src="/assets/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/assets/vendor/holder.min.js"></script>
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+  </body>
+</html>
