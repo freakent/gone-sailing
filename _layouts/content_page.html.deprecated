@@ -16,6 +16,7 @@ layout: default
         <p class="font-italic">{{page.sub-title}}</p>
         <!-- include img.html class="img-fluid mb-3" baseurl=page.content_baseurl src=page.banner-image -->
         <img src="{{ page.images[0].file | content_url:'originals'}}" class="img-fluid mb-3"> 
+
         {{ content }}
       </main>
 

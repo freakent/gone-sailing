@@ -10,6 +10,7 @@ layout: default
       <img class="img-thumbnail float-right ml-3" src="{{ page.images[0].file | content_url:'250x250' }}" alt="{{ page.images[0].title }}" style="max-height: 250px; object-fit: cover;">
       <h1 style="font-family: 'Permanent Marker', cursive;">{{page.title}}</h1>
     <h2 class="font-weight-light">{{page.subtitle}}</h2>
+    <p>Category: {{page.collection | default: 'none'}}</p>
     <p class="font-small">{{ post_date_long }} by {{ page.author | default: 'Martin' }}</p>
     {{ content }}
   </main>

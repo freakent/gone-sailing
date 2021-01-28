@@ -1,34 +1,46 @@
 ---
 layout: default
 ---
+{% assign pages = site.posts | concat: site.pages %}
 <main role="main">
 
   <div class="container" style="margin-top:80px;">
     
     <div class="row">
-
       <table class="table table-sm"> 
         <thead>
           <tr>
-            <th>Title / Sub-Title</th>
-            <th>Categories</th>
             <th>Page</th>
-            <!-- <th>Tags</th> -->
-            <th>Image</th>
+            <th>Title / Sub-Title</th>
+            <th>Images</th>
             <th>CMS</th>
+            <th>Categories</th>
+            <!-- <th>Tags</th> -->
           </tr>
         </thead>
         <tbody>
-        {% for page in site.posts %}
-        {% include post_vars.html obj=page %}
+        {% for page in pages %}
+          
+          {% assign ext = page.path | split:'.' %}
+
+          {% unless ext[1] == 'html' or ext[1] == 'md' %}
+            {% continue %}
+          {% endunless %}
+
+           <!-- include post_vars.html obj=page -->
         
         <tr class="small">
+          <td><small><a href="{% link {{ page.path }} %}">{{ page.path }}</a></small></td>
           <td>{{ page.title }}<br/><small>{{ page.subtitle }}</small></td>
+          <td><small>
+            {% for image in page.images %}
+              <a href="{{ image.file | content_url:'250x250', page }}">{{image.file}}</a>
+              {% unless forloop.last %}, {% endunless %} 
+            {% endfor %}
+          </small></td>
+          <td>{{ page.content_baseurl | default: site.cdnurl}}</td>
           <td>{{ page.categories }}</td>
-          <td><small>{{ page.path }}</small></td>
          <!-- <td>{{ post_tags }}</td> -->
-          <td><small>{{ post_image }}</small></td>
-          <td>{{page.content_baseurl}}</td>
         </tr>
         {% endfor %}
       </tbody>
