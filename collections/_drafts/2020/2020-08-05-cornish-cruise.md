@@ -1,8 +1,8 @@
 ---
 categories: cruising
 tags: [Hamble, Yarmouth, IOW, West Country]
-title: Summer Cornish Cruise
-subtitle: From the River Hamble to Gorran Haven, Cornwall and back
+title: Cornish Summer Cruise
+subtitle: Our passage from the River Hamble to Gorran Haven in Cornwall and a leisurely sail back
 content_baseurl: /studio
 images:
     - file: IMG_7319.jpeg
@@ -41,15 +41,12 @@ After the dolphin display we finished supper and prepared for a night sail that 
 So here it it, the picture we came for. Stunning view out across the bay, but this time with a familiar boat anchored up 😉
 
 ### Day 4 - Gorran Haven to Fowey (via Porth Looe)
-### Day 5 - Brixham to Salcombe
-### Day 6 - Salcombe to Plymouth
-### Day 10 - Plymouth to Fowey, Cornwall
-### Day 11 - Fowey to River Yealm
-### Day 12 - River Yealm to Dartmouth
-### Day 13 - Dartmouth to Torquay (via Dittisham and Brixham)
-### Day 14 - Torquay to Weymouth
-### Day 15 - Dartmouth to Weymouth
-### Day 17 - Weymouth to River Hamble
+### Day 5 - Fowey to Plymouth
+### Day 6 - Plymouth to River Yealm
+### Day 10 - River Yealm to Salcombe
+### Day 11 - Salcombe to Dartmouth (in the fog)
+### Day 12 - Dartmouth to Weymouth (across Lyme Bay)
+### Day 13 - Weymouth to River Hamble 
 
 
 [image-1]: {{ 'IMG_5118.jpeg' | content_url:"250x250" }} "Moored up outside Yarmouth harbour"
