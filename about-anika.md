@@ -7,8 +7,6 @@ Xcontent_baseurl: /studio/site
 images: 
     - file: IMG_5369.jpg
       title: Anika moored up in Weymouth Harbour
-    - file: IMG_5369.jpg
-      title: Anika moored up in Weymouth Harbour
 ---
 ### History
 _Anika_ was built in 2003 by Najad Yachts of Sweden. We took ownership of her in September 2018 at Hamble Point Marina, near Southampton.  She is currently berthed on the River Hamble. We're gradually upgrading her equipment and systems and one day plan to sail her to exotic places.
