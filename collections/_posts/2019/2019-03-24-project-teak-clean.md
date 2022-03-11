@@ -60,8 +60,8 @@ Marigolds instead.
 After cleaning each section, that section of the deck was thoroughly rinsed down with water 
 from the hose. You could clearly see the dirt and muck washing right off, and the colour of 
 the teak starting to appear. In hindsight it would have been a good idea to thoroughly rinse 
-the sides of the hull too as the chemicals did leave some streaks down the side that I will 
-now have to polish out.
+the sides of the hull too as the chemicals did leave some streaks down the side that I had 
+to later polish out.
 
 ### Step 2 - Renovate
 Once a large section was cleaned and rinsed we moved onto Onward Trading Company concentrated 
@@ -71,7 +71,9 @@ turning a more fresher lighter colour. As each section was treated they were aga
 rinse off using the hose pipe. 
 
 ### Step 3 - "Semco" Teak Sealer
-This was by far the most rewarding step of the whole process as you can really see golden colour of the teak as you go. Semco comes in a variety of colours, we chose the Natural colour. The trick with Semco is before you start to stir it well and to keep stirring it as you use it.  Working in small sections, we used foam brushes to apply the watery Semco to the teak straight from the tin. To ensure an even coverage you then take a cloth rag and gently wipe over the surface of the freshly applied Semco. Move to the next section, give the tin a good stir and repeat. Depending on temperature the Semco will take a few hours to dry sufficiently to put on a second coat. Semco recommend two coats for the first application. For the second coat you just repeat the whole process with the foam brushes, cloth rags and frequent stirring. Be careful to mop up drips on the hull, your top sides or any metal work before it dries as it can be stubborn to completely remove. The whole 3 step process took us the best part of a weekend.
+This was by far the most rewarding step of the whole process as you can really see golden colour of the teak as you go. Semco comes in a variety of colours, we chose the Natural colour. The trick with Semco is to give it a good stir before you start and to keep stirring it as you use it. If you don't, the coloured pigments fall to the bottom of the tin and you will get a very uneven finish across your deck.
+
+ Working in small sections, we used foam brushes to apply the watery Semco to the teak straight from the tin. To ensure an even coverage you then take a cloth rag and gently wipe over the surface of the freshly applied Semco. Move to the next section, give the tin a good stir and repeat. Depending on temperature the Semco will take a few hours to dry sufficiently to be able to put on a second coat. Semco recommend two coats for the first application. For the second coat you just repeat the whole process with the foam brushes, cloth rags and frequent stirring. Be careful to mop up drips on the hull, your top sides or any metal work before it dries as it can be stubborn to completely remove. The whole 3 step process took us the best part of a weekend.
 
 I estimate we used 3 and a bit of the quart sized tins for our 40ft deck. Semco does come in larger tin sizes and these work out much more cost effective than the quart sized tins. Don't worry if you have some left in the tin it will keep for a good few months until you need it again. 
 
