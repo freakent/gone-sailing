@@ -21,7 +21,7 @@ layout: default
     <h3 class="font-weight-light">{{page.subtitle}}</h3>
     <!-- <p>Category: {{page.collection | default: 'none'}}</p> -->
     {% if page['collection'] == 'posts' %}
-    <p class="font-small">{{ post_date_long }} by {{ page.author | default: 'Martin' }}</p>
+    <p class="font-small font-italic">{{ post_date_long }} by {{ page.author | default: 'Martin' }}</p>
     {% endif %}
     {{ content }}
   </main>
