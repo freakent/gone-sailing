@@ -1,5 +1,5 @@
 ---
-categories: boat-projects
+category: boat-projects
 tags: [teak deck, Semco]
 title: Project Teak Clean
 subtitle: Making Anika's decks look like new again

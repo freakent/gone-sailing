@@ -24,13 +24,14 @@ layout: default
             {% for post in  sorted_posts %}
               {%- include post_vars.html obj=post -%}
               {% assign image_url = post.images[0].file | content_url:'500x500', post %}
+              {% assign misc_text = post_date_long | append: " by " | append: post_author %}
           
               <div class="col-xl-3 col-md-4 col-sm-6">
                 {% include card.html 
                   heading=post.title
                   image=image_url
                   body=post.excerpt 
-                  misc=post_date_long
+                  misc=misc_text
                   link=post.url
                 %}
               </div>

@@ -1,6 +1,6 @@
 ---
 layout: post_page
-categories: boat-buying
+category: boat-buying
 tags: ['Hamble Point', 'Mercury Yacht Harbour']
 title: New Owners
 subtitle: First Day of Yacht Ownership

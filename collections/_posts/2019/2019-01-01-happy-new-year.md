@@ -1,5 +1,5 @@
 ---
-categories: cruising
+category: cruising
 tags: [Newtown Creek, New Year]
 title: New Year in Newtown Creek, IOW
 images: 

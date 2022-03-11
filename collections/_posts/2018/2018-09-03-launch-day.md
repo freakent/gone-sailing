@@ -1,6 +1,6 @@
 ---
 layout: post_page
-categories: boat-buying
+category: boat-buying
 tags: ['Hamble Point']
 title: Launch Day
 images: 

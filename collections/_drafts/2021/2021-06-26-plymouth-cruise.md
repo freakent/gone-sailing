@@ -1,5 +1,5 @@
 ---
-categories: cruising
+category: cruising
 tags: [Hamble, Yarmouth, IOW, West Country, Plymouth, Brixham]
 title: Plymouth Cruise
 subtitle: Sailing to Plymouth and back, taking a bit more time to explore

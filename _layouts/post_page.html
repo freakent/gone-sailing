@@ -4,20 +4,31 @@ layout: default
 {% include post_vars.html obj=page %}
 
 <div class="container" style="margin-top:80px; min-height: calc(100vh - 225px);">
+
+  {% if page.category %}
+  <div class="row">
+    <div class="col">
+    <p><a href="{% link {{ category_page }} %}">< Back to {{page.category | replace: "-", " " | capitalize}}</a></p>
+  </div>
+  </div>
+  {% endif %}
+
   <div class="row">
 
     <main class="col-md-12 col-lg-9" >
       <img class="img-thumbnail float-right ml-3" src="{{ page.images[0].file | content_url:'250x250' }}" alt="{{ page.images[0].title }}" style="max-height: 250px; object-fit: cover;">
       <h1>{{page.title}}</h1>
     <h3 class="font-weight-light">{{page.subtitle}}</h3>
-    <p>Category: {{page.collection | default: 'none'}}</p>
+    <!-- <p>Category: {{page.collection | default: 'none'}}</p> -->
+    {% if page['collection'] == 'posts' %}
     <p class="font-small">{{ post_date_long }} by {{ page.author | default: 'Martin' }}</p>
+    {% endif %}
     {{ content }}
   </main>
 
 
   <nav class="col bg-light" id="sidebar" style="max-width:285px;">
-    <div class="list-group list-group-flush">
+    <div class="list-group list-group-flush pt-3">
       <li class="list-group-item pl-2 pb-0"><h5 class="font-weight-light">Contents</h5></li>
       <div id="dynamic-section">
         <!-- <li class="list-group-item">What to expect</li> -->

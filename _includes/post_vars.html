@@ -3,6 +3,8 @@
 {% assign post_images_folder = include.obj.date | date: '%Y-%m-%d-' | prepend: "/posts/" | append: include.obj.slug %}
 {% assign post_image = post_images_folder | append: "/" | append: include.obj.image %} 
 {% assign base_path = include.obj.date | date: '%Y-%m-%d-' | prepend: "/posts/" | append: include.obj.slug %}
+{% assign post_author = include.obj.author | default: "martin" %}
+{% assign category_page = include.obj.category | append: ".md" | prepend: "_post-categories/" %}
 <!-- 
     post_tags = {{ post_tags }}
     post_date_long = {{ post_date_long }}

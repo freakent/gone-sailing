@@ -1,5 +1,5 @@
 ---
-categories: cruising
+category: cruising
 tags: [Hamble, Yarmouth, IOW, West Country]
 title: Our First West Country Odyssey 
 subtitle: From the river Hamble to Fowey, Cornwall and back

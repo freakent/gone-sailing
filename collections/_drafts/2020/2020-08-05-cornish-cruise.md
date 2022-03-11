@@ -1,5 +1,5 @@
 ---
-categories: cruising
+category: cruising
 tags: [Hamble, Yarmouth, IOW, West Country]
 title: Cornish Summer Cruise
 subtitle: Our passage from the River Hamble to Gorran Haven in Cornwall and a leisurely sail back
