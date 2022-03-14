@@ -3,6 +3,7 @@ const changed = require('gulp-changed')
 const debug = require('gulp-debug')
 const imageResize = require('gulp-image-resize')
 const rename = require('gulp-rename')
+const del = require('del')
 const { exec } = require('child_process')
 
 const studio_originals = './studio/**/originals/*.{jpg,jpeg,png}'
@@ -32,18 +33,20 @@ function bootstrap_js() {
 }
 
 function bootstrap_scss() {
+  let sccs = "./_sass/bootstrap/"
+  del.sync(sccs)
   return src([
     "./node_modules/bootstrap/scss/**/*"
   ])
   .pipe(debug({title:'boostrap:scss'}))
-  .pipe(dest("./_sass/bootstrap/"))
+  .pipe(dest(sccs))
 }
 
 function bootstrap_assets(done) {
   return parallel(bootstrap_js, bootstrap_scss)(done)
 }
 
-function fontawesom_scss() {
+function fontawesome_scss() {
   return src([
     "./node_modules/@fortawesome/fontawesome-free/scss/**/*"
   ])
@@ -58,7 +61,7 @@ function fontawesome_fonts() {
 }
 
 function fontawesome_assets(done) {
-    return parallel(fontawesom_scss, fontawesome_fonts)(done)
+    return parallel(fontawesome_scss, fontawesome_fonts)(done)
 }
   
 

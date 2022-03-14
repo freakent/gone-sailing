@@ -10,12 +10,10 @@
     {% include favicon.html %}
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/main.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/styles.css">
     <title>
       {{ site.name }} 
-      {% if page.title %}
-        {{ page.title | prepend:' - ' }}
-      {% endif %}
+      {% if page.title %} {{ page.title | prepend:' - ' }} {% endif %}
     </title>
   </head>
   <body>
