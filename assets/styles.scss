@@ -41,6 +41,10 @@ body, html {
   height:100%;
 }
 
+[id] {
+  scroll-margin-top: 2em;
+}
+
 .front-page {
   background-image: url({{ site.cdnurl | append: "/site/originals/IMG_4498.gif" }});
   height: 100%;
