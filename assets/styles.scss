@@ -53,18 +53,35 @@ body, html {
   background-size: cover;
 
   .hero {
-    margin-bottom: 1.25rem;
+    margin: 1.25rem;
     font-family: "Permanent Marker", cursive;
-    font-size: 150%;
 
-    h1 {
-      font-size: 3.5rem;
+    @media (min-width:0) {
+      h1 { font-size: 2.5rem; }
+      h3 { font-size: 1rem; }
     }
 
-    h3 {
-      font-size: 1.4rem;
-      margin-bottom: 0;
+    @media (min-width:576px) {
+      h1 { font-size: 3.5%; }
+      h3 { font-size: 1.4rem; }
     }
+
+    @media (min-width:768px) {
+      h1 { font-size: 3.5rem; }
+      h3 { font-size: 1.4rem; }
+    }
+
+    @media (min-width:1200px) {
+      h1 { font-size: 5rem; }
+      h3 { font-size: 2rem; }
+    }
+
+    @media (min-width:1400px) {
+      h1 { font-size: 7rem; }
+      h3 { font-size: 2.8rem; }
+    }
+
+
   }
 }
 /* banner image
