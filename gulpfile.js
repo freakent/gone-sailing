@@ -23,7 +23,7 @@ function jekyllBuild(cb) {
 
 function bootstrap_js() {
     return src([
-      "./node_modules/bootstrap/dist/js/bootstrap.min.*",
+      "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.*",
       "./node_modules/jquery/dist/jquery.slim.*",
       "./node_modules/popper.js/dist/umd/popper.min.*",
       "./node_modules/holderjs/holder.min.*",
