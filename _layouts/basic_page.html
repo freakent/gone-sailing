@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/x-icon" href="{{ site.content_baseurl | append:'/favicons/favicon.ico'}}?1000">
+    {% include favicon.html %}
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/styles.css">
+    <title>
+      {{ site.name }} 
+      {% if page.title %} {{ page.title | prepend:' - ' }} {% endif %}
+    </title>
+  </head>
+  <body>
+    <script type="text/javascript" src="{{site.baseurl}}/assets/vendor/jquery.slim.min.js"></script>
+    {{ content }}
+    <script type="text/javascript" src="{{site.baseurl}}/assets/vendor/popper.min.js"></script>
+    <script type="text/javascript" src="{{site.baseurl}}/assets/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{site.baseurl}}/assets/vendor/holder.min.js"></script>
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+  </body>
+</html>
