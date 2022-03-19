@@ -15,7 +15,7 @@
        <span class="navbar-toggler-icon"></span>
      </button>
     
-     <div class="collapse navbar-collapse justify-content-between " id="navbarCollapse">
+     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
 
        <ul class="navbar-nav ml-auto">
         <li class="nav-item">
@@ -76,16 +76,15 @@
     window.onscroll = function() {scrollFunction()};
 
     function scrollFunction() {
-      //document.getElementById("debug").innerText = document.documentElement.scrollTop + ", " + document.body.scrollTop
+      $("#navbarCollapse").collapse('hide')
 
-      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
         if (navbar.classList.contains('navbar-dark')) {
           navbar_white()
         }
       } else {
         if (navbar.classList.contains('navbar-light')) {
           navbar_transparent()
-          $(".navbar-collapse").collapse('hide')
         }
       } 
     }
@@ -95,6 +94,7 @@
   <script>
   $( document ).ready(function() {
     $('.navbar-collapse').on('show.bs.collapse', function() {
+      //console.log('Change navbar to white')
       navbar_white()
     })
 
