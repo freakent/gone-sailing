@@ -1,7 +1,7 @@
-.sass-cache
-_site
-node_modules
-vendor
-studio
-.jekyll-cache
+/.sass-cache
+/_site
+/node_modules
+/studio
+/.jekyll-cache
 .DS_Store
+/vendor
