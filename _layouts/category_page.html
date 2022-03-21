@@ -3,7 +3,7 @@ layout: default
 ---
 <main role="main">
 
-  <div class="container" style="margin-top:80px;">
+  <div class="container" style="margin-top:60px;">
 
     <div class="row">
       
@@ -26,7 +26,7 @@ layout: default
               {% assign image_url = post.images[0].file | content_url:'500x500', post %}
               {% assign misc_text = post_date_long | append: " by " | append: post_author %}
           
-              <div class="col-xl-3 col-md-4 col-sm-6 mb-3">
+              <div class="col-xl-3 col-md-4 col-sm-6 mb-2">
                 {% include card.html 
                   heading=post.title
                   image=image_url

@@ -3,7 +3,7 @@ layout: default
 ---
 {% include post_vars.html obj=page %}
 
-<div class="container" style="margin-top:80px; min-height: calc(100vh - 225px);">
+<div class="container" style="margin-top:60px; min-height: calc(100vh - 225px);">
 
   {% if page.category %}
   <div class="row">
@@ -21,7 +21,7 @@ layout: default
     <h3 class="font-weight-light" id="subtitle">{{page.subtitle}}</h3>
     <!-- <p>Category: {{page.collection | default: 'none'}}</p> -->
     {% if page['collection'] == 'posts' %}
-    <p class="font-small font-italic">{{ post_date_long }} by {{ page.author | default: 'Martin' }}</p>
+    <p class="fst-italic"><small>{{ post_date_long }} by {{ page.author | default: 'Martin' }}</small></p>
     {% endif %}
     {{ content }}
   </main>
