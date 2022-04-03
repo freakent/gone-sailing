@@ -125,7 +125,12 @@ h6 {
     <div class="container">
         <div class="col-xs-12">
                 <div class="text-center">
-                    {% for link in page.links %}
+
+                    <div style="padding-bottom: 30px;">
+                        <button onclick="location.href='https://www.instagram.com/p/CQMcB1SgR7E/?utm_source=ig_web_copy_link'" type="button" class="btn btn-outline-light shake" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 600;">The "Jarvis Clips"</button>
+                    </div>
+
+					{% for link in page.links %}
                         {% assign post = site.posts | find:"slug",link %}
                         <div style="padding-bottom: 30px;">
                             <button onclick="location.href='{% link {{ post.path }} %}'" type="button" class="btn btn-outline-light" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 800;">{{post.title}}</button>
@@ -133,7 +138,7 @@ h6 {
                     {% endfor %}
 
                     <div style="padding-bottom: 30px;">
-                        <button onclick="location.href='https://gone-sailing.uk'" type="button" class="btn btn-outline-light shake" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 600;">Our Website "Gone Sailing"</button>
+                        <button onclick="location.href='https://gone-sailing.uk'" type="button" class="btn btn-outline-light" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 600;">Our Website "Gone Sailing"</button>
                     </div>
 <!--
 
