@@ -8,3 +8,6 @@ $link-hover-decoration:                   none; // null !default;
 
 $navbar-dark-hover-color:#fff;  // $white;
 $fa-font-path: "./vendor/fontawesome";
+@import "fontawesome/fontawesome";
+@import "fontawesome/brands";
+@import "bootstrap/variables";
