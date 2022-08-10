@@ -3,7 +3,7 @@ category: cruising
 tags: [Hamble, Yarmouth, IOW, West Country, Plymouth, Brixham]
 title: Plymouth Cruise
 subtitle: Sailing to Plymouth and back, taking a bit more time to explore
-content_baseurl: /studio
+Xcontent_baseurl: /studio
 images:
     - file: IMG_8553.jpeg
       title: Moored up at Plymouth Yacht Haven

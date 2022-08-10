@@ -3,7 +3,7 @@ category: cruising
 tags: [Hamble, Yarmouth, IOW, West Country]
 title: Cornish Summer Cruise
 subtitle: Our passage from the River Hamble to Gorran Haven in Cornwall and a leisurely sail back
-content_baseurl: /studio
+Xcontent_baseurl: /studio
 images:
     - file: IMG_7319.jpeg
       title: Anchored off the beach at Gorran Haven
