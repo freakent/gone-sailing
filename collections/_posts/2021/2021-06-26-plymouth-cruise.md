@@ -15,14 +15,9 @@ images:
       title: "Yarmouth at sunset"
 ---
 
-15 days, 350NM - This was our 3rd trip West towards the West Country. The goal this time was to just get as far as Plymouth and to spend more time in each place relaxing and exploring.
+15 days, 350NM - This was our 3rd trip down to the West Country. The goal this time was to just get as far as Plymouth and to spend more time in each place relaxing and exploring.
 
 ### Day 1 - River Hamble to Lymington
-Passing the Needles on the first leg of our 150nm trip to Gorran Haven in Cornwall. A relatively short passage from Hamble to Poole Quay, so that we can better time our rounding of Portland Bill to catch the tide on day 2.
-
-Moored up in Poole Quay Boat Haven, chatting to our neighbours about boats and sailing plans. Finished off my anchor splice, extending Anika’s anchor chain with 40m of new Octoplait anchor warp. When we get to Gorran Haven we may need to anchor in slightly deeper water than usual. My splice is a work of art. ⚓️⛓🧶
-
-![image-1]{: .img-thumbnail} ![image-2]{: .img-thumbnail} ![image-3]{: .img-thumbnail}
 
 ### Day 2 - Lymington to Poole Harbour
 
