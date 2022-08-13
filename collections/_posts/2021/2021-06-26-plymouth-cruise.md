@@ -10,24 +10,24 @@ images:
     - file: IMG_8551.jpeg
       title: Moored up at Plymouth Yacht Haven
     - file: IMG_8561.jpeg
-      title: "Someone didn't check the tides"
+      title: Plymouth Mount Batten
     - file: IMG_8583.jpeg
-      title: "Yarmouth at sunset"
+      title: Brixham Marina
 ---
 
 15 days, 350NM - This was our 3rd trip down to the West Country. The goal this time was to just get as far as Plymouth and to spend more time in each place relaxing and exploring.
 
-### Day 1 - River Hamble to Lymington
+### River Hamble to Lymington
 
-### Day 2 - Lymington to Poole Harbour
+### Lymington to Poole Harbour
 
-### Day 3 - Poole Harbour to Weymouth
+### Poole Harbour to Weymouth
 
-### Day 4 - Weymouth to Dartmouth & Kingswear (across Lyme Bay)
-### Day 5 - Kingswear to Dittisham
-### Day 6 - Dittisham to Salcombe
-### Day 7 - Salcombe to River Yealm 
-### Day 8 - River Yealm to Plymouth
+### Weymouth to Dartmouth & Kingswear (across Lyme Bay)
+### Kingswear to Dittisham
+### Dittisham to Salcombe
+### Salcombe to River Yealm 
+### River Yealm to Plymouth
 Having phoned around the main marinas en-route to Plymouth and having no luck (some
 big sailing event on in Plymouth over the weekend), I called [Plymouth Yacht Haven] and was pleased to be offered a berth for the night. The Yacht Haven is across the water from the Barbican on the Mount Batten peninsular. Whilst Sutton marina remains my favourite due to its location in the Barbican, the Yacht Haven has definitely pushed QAB into 3rd place. They have a ferry that runs back and forth to the Barbican every half hour and is really no bother at all. It’s actually quite nice to be close the Barbican but just far enough away from all the “revellers”. 
 
@@ -39,21 +39,24 @@ For dinner we decided to check out the Yacht Haven marina’s own restaurant, [T
 
 Overall,the Yacht Haven was a big surprise for us. With the really helpful, friendly staff, access to the Barbican, plus the excellent restaurant I am sure we will be back. 
 
-### Day 10 - Plymouth to Brixham
+![image-1]{: .img-thumbnail}
+![image-2]{: .img-thumbnail}
+
+### Plymouth to Brixham
 To shelter from the big storm that was forecast for the next couple of days, we managed to book a couple of nights in [Brixham Marina]. It’s always a bonus when we can book into an MDL marina as we get to stay there for free, thanks to MDL's Freedom Berthing scheme. 
 
 We’re trying to spend more time exploring the places we visit so we have taken up Geocaching again. We enjoyed a geocaching-led guided tour of the harbour before heading off in search of a couple of caches on the way to Battery Park. We were rewarded with some amazing views over the harbour and the small bays next to Brixham. 
 
 As a reward for our 20k steps we stopped at one of our favourite little cocktail and cake bars, called [Liberty]. The decor in that place always makes we smile, my Dark and Stormy cocktail helped too. 
-
-### Day 12 - Brixham to Weymouth Harbour (across Lyme Bay)
-### Day 14 - Weymouth Harbour to Yarmouth, IoW 
 ![image-3]{: .img-thumbnail}
-### Day 15 - Yarmouth, IoW to Hamble River
+### Brixham to Weymouth Harbour (across Lyme Bay)
+### Weymouth Harbour to Yarmouth, IoW 
+
+### Yarmouth, IoW to Hamble River
 
 
 {% md_image_links %}
-[image-4]: {{ 'IMG_8609.jpeg' | content_url:"250x250" }} "Moored up outside Yarmouth harbour"
+[image-99]: {{ 'IMG_8609.jpeg' | content_url:"250x250" }} "Moored up outside Yarmouth harbour"
 
 
 [Plymouth Yacht Haven]: https://www.yachthavens.com/plymouth-yacht-haven "go to Plymouth Yacht Haven's website"
