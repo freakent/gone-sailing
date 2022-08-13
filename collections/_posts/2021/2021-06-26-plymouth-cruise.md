@@ -52,7 +52,7 @@ As a reward for our 20k steps we stopped at one of our favourite little cocktail
 ### Day 15 - Yarmouth, IoW to Hamble River
 
 
-{% image_relative_links images %}
+{% md_image_links %}
 [image-4]: {{ 'IMG_8609.jpeg' | content_url:"250x250" }} "Moored up outside Yarmouth harbour"
 
 
