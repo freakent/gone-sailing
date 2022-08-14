@@ -29,10 +29,15 @@ module Jekyll
         prefix = @arguments['prefix'] || "image-"
         page = context.registers[:page]
         images = page["images"]
-        output = images.map.with_index{ |img, idx| "[#{prefix}#{idx}]: #{get_url_for(img['file'], format, page)} \"#{img['title']}\" " }
+        output = images.map.with_index{ |img, idx| "[#{get_ref(img, prefix, idx)}]: #{get_url_for(img['file'], format, page)} \"#{img['title']}\" " }
         puts output.join("  \n")
         return output.join("  \n")
       end
+
+      def get_ref(image, prefix, idx)
+        image["ref"] || "#{prefix}#{idx}"
+      end
+
     end
   end
   
