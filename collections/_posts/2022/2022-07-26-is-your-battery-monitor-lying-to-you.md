@@ -3,7 +3,7 @@ category: boat-projects
 tags: [batteries, solar]
 title: Is your Victron battery monitor lying to you?
 subtitle: "Default settings need to be changed for use with Solar"
-content_baseurl: /studio
+Xcontent_baseurl: /studio
 images:
     - ref: BMV712
       file: IMG_0636.jpeg
