@@ -7,10 +7,11 @@ images:
   - file: IMG_5369.jpg
     title: Anika moored up in Weymouth Harbour
 links:
-  - "is-your-battery-monitor-lying-to-you"
-  - "project-teak-clean"
+  - slug: "is-your-battery-monitor-lying-to-you"
+    title: "Is your battery monitor lying to you"
+  - slug: "project-teak-clean"
 old-links:
-  - "west-country-odyssey"
+  - slug: "west-country-odyssey"
 ---
 <style>
 body {
@@ -133,9 +134,9 @@ h6 {
                     </div>
 
 					{% for link in page.links %}
-                        {% assign post = site.posts | find:"slug",link %}
+                        {% assign post = site.posts | find:"slug",link.slug %}
                         <div style="padding-bottom: 30px;">
-                            <button onclick="location.href='{% link {{ post.path }} %}'" type="button" class="btn btn-outline-light" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 800;">{{post.title}}</button>
+                            <button onclick="location.href='{% link {{ post.path }} %}'" type="button" class="btn btn-outline-light" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 800;">{{link.title | default: post.title}}</button>
                         </div>
                     {% endfor %}
 
