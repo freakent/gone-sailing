@@ -53,22 +53,12 @@ layout: default
     <div class="modal-content">
 
       <div class="modal-header">
-        <h5 class="modal-title">Pictures from {{ page.title }}</h5>
-        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h7 class="modal-title text-truncate">{{ page.title }}</h7>
+        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
 
-      <div class="modal-body bg-dark" style="height: calc(100vh - 200px)">
-        <div id="carouselExampleIndicators" class="carousel slide d-flex h-100 align-items-center" data-ride="carousel">
-          <ol class="carousel-indicators">
-            {% for image in page.images %}
-            {% assign active_class = "" %}
-            {% if forloop.first %}
-            {%   assign active_class = "active" %}
-            {% endif %}
-
-            <li data-target="#carouselExampleIndicators" data-slide-to="{{forloop.index0}}" class="{{active_class}}"></li>
-            {% endfor %}
-          </ol>
+      <div class="modal-body bg-dark" style="height: calc(114vh - 200px)">
+        <div id="imageCarousel" class="carousel slide d-flex h-100 align-items-center" data-bs-ride="false">
           <div class="carousel-inner">
             {% for image in page.images %}
 
@@ -77,26 +67,40 @@ layout: default
               {%   assign active_class = "active" %}
               {% endif %}
             
-            <div class="carousel-item {{active_class}}">
-              <img class="d-block img-fluid m-auto" src="{{ image.file | content_url:'originals'}}" alt="{{image.title}}" style="max-height: calc(100vh - 235px)">
+            <div class="carousel-item {{active_class}}" id="carousel-item-{{forloop.index0}}">
+              <img class="d-block img-fluid m-auto" src="{{ image.file | content_url:'originals'}}" alt="{{image.title}}" style="max-height: calc(114vh - 235px)">
+              <div class="carousel-caption d-none Xd-md-block">
+                {{image.title}}
+              </div>
             </div>
             {% endfor %}
+          </div> <!-- carouselInner -->
+          <div class="carousel-indicators">
+            {% for image in page.images %}
+
+              {% assign active_class = "" %}
+              {% if forloop.first %}
+              {%   assign active_class = "active" %}
+              {% endif %}
+            
+            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="{{forloop.index0}}" class="{{active_class}}" aria-current="true" aria-label="Slide 1"></button>
+            {% endfor %}
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div> <!-- carousel -->
       </div> <!-- modal-body -->
-
+<!--
       <div class="modal-footer">
-        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-
+-->
     </div>
   </div>
 </div>
@@ -115,9 +119,23 @@ layout: default
     $('#sidebar .list-group #dynamic-section').append('<a class="list-group-item list-group-item-light list-group-item-action p-2 font-weight-light text-truncate" href="#"><small>back to top</small></a>')   
 
     $('img.img-thumbnail').on( "click", function(event) {
-      let img = $(event.relatedTarget)
+      let imgURL = $(event.target)[0].src
+      let imgFile = imgURL.split('/').pop().split('#')[0].split('?')[0]
+      let carouselItem = $('div.carousel-item img').filter(function(i,e ){ return e.src.includes(imgFile)}).parent()[0]
+      let index = carouselItem.id.split('-')[2]
+      console.log(carouselItem.id, index)
+      //$('div.carouselItem').find('[src="'+img+'"]')
       $('#modalCarousel').modal('toggle')
+      let carousel = bootstrap.Carousel.getOrCreateInstance(document.getElementById('imageCarousel'))
+      carousel.to(index)
+    
     })
     
+    $('#imageCarousel').on("slide.bs.carousel", function(event) {
+      console.log(event.to)
+      console.log($('#carousel-item-'+event.to+' .carousel-caption').html())
+      $('.modal-title').html($('#carousel-item-'+event.to+' .carousel-caption').html())
+    })
+
   });
   </script>
