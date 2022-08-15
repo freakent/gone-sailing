@@ -5,12 +5,12 @@ title: Is your Victron battery monitor lying to you?
 subtitle: "Default settings need to be changed for use with Solar"
 content_baseurl: /studio
 images:
+    - ref: BMV712
+      file: IMG_0636.jpeg
+      title: Victron Energy Battery Monitor
     - ref: app100pct
       file: IMG_0333.jpeg
-      title: Smart BMV712
-    - ref: apphistory
-      file: IMG_0602.jpeg
-      title: Automatic synchronisations
+      title: "100% State of charge"
     - ref: appsync
       file: Frame-14-08-2022-11-21-26.jpg
       title: Automatic synchronisations in Victron Connect App
@@ -29,6 +29,7 @@ However, in a Solar charged set up it is not uncommon for the MPPT to deliver pe
 
 Use the Victron Connect app to connect to your BMV and open the History tab. If the number of synchronisations is regularly increasing you should consider updating the synchronisation settings. Ideally your BMV should read 100% SOC when your Consumed Ah reaches zero.
 
+![app100pct]{: .img-thumbnail}
 ![appsync]{: .img-thumbnail}
 
 ### Synchronisation Settings
