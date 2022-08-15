@@ -24,13 +24,13 @@ module Jekyll
       def render(context)
         #Jekyll.logger.debug "context", context.registers[:page].images
         Jekyll.logger.debug "arguments", @arguments
-        puts "arguments", @arguments
+        #puts "arguments", @arguments
         format = @arguments['format'] || "250x250"
         prefix = @arguments['prefix'] || "image-"
         page = context.registers[:page]
         images = page["images"]
         output = images.map.with_index{ |img, idx| "[#{get_ref(img, prefix, idx)}]: #{get_url_for(img['file'], format, page)} \"#{img['title']}\" " }
-        puts output.join("  \n")
+        #puts output.join("  \n")
         return output.join("  \n")
       end
 
