@@ -3,7 +3,8 @@ const changed = require('gulp-changed')
 const debug = require('gulp-debug')
 const imageResize = require('gulp-image-resize')
 const rename = require('gulp-rename')
-const del = require('del')
+//const del = require('del')
+//import {deleteSync} from 'del'
 const { exec } = require('child_process')
 
 const studio_originals = './studio/**/originals/*.{jpg,jpeg,png}'
@@ -34,7 +35,7 @@ function bootstrap_js() {
 
 function bootstrap_scss() {
   let sccs = "./_sass/bootstrap/"
-  del.sync(sccs)
+//  deleteSync.sync(sccs)
   return src([
     "./node_modules/bootstrap/scss/**/*"
   ])
