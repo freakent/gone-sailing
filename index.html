@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/x-icon" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/favicon.ico?1000">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="https://dpyyvkdkr8dej.cloudfront.net/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/favicon-16x16.png">
+<link rel="manifest" href="/content/favicons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="https://dpyyvkdkr8dej.cloudfront.net/favicons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/assets/styles.css">
+    <title>
+      Gone Sailing 
+      
+    </title>
+  </head>
+  <body>
+    <script type="text/javascript" src="/assets/vendor/jquery.slim.min.js"></script>
+    
+
+<header>
+   <nav id="navbar" class="navbar navbar-expand-md fixed-top navbar-dark bg-transparent">
+     <div class="container">
+     <a class="navbar-brand" href="/">Gone Sailing</a>
+    
+     <button id="toggled" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+    
+     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+
+       <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/cruising/index.html">Cruising</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/boat-projects/index.html">Boat Projects</a>
+        </li>
+        <li class="nav-item">
+           <a class="nav-link" href="/about-anika.html">Our Boat</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="/boat-buying/index.html">Boat Buying</a>
+         </li>
+         <li class="nav-item" id="crew">
+          <a class="nav-link" href="#">Crew</a>
+        </li>
+</ul>
+
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.instagram.com/mr.martin.jarvis/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow on Instagram">
+                  <span class="align-middle">
+                  <i id="ig-icon" class="fab fa-instagram fa-1x text-light"></i>
+                  <span class="d-md-none">
+                    Follow on Instagram
+                  </span>
+                </span>
+                </a>
+            </li>
+        </ul>
+
+      </div>
+    </div>
+   </nav>
+ </header>
+
+
+  <script>
+    var navbar = document.getElementById("navbar")
+    var ig_icon = document.getElementById("ig-icon")
+
+    function navbar_white() {
+      navbar.classList.remove("navbar-dark", "bg-transparent");
+      navbar.classList.add("navbar-light", "bg-white");
+      ig_icon.classList.remove("text-light");
+      ig_icon.classList.add("text-dark");
+    }
+
+    function navbar_transparent() {
+      navbar.classList.remove("navbar-light", "bg-white");
+      navbar.classList.add("navbar-dark", "bg-transparent");
+      ig_icon.classList.remove("text-dark");
+      ig_icon.classList.add("text-light");
+    }
+
+     
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      $("#navbarCollapse").collapse('hide')
+
+      if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+        if (navbar.classList.contains('navbar-dark')) {
+          navbar_white()
+        }
+      } else {
+        if (navbar.classList.contains('navbar-light')) {
+          navbar_transparent()
+        }
+      } 
+    }
+    
+  </script>
+  
+  <script>
+  $( document ).ready(function() {
+    $('.navbar-collapse').on('show.bs.collapse', function() {
+      //console.log('Change navbar to white')
+      navbar_white()
+    })
+
+  });
+  </script>
+
+ </script>
+
+    <div class="front-page">
+  <div class="text-light d-flex h-100 align-items-end justify-content-center">
+    <div class="hero">
+      <h3 class="mb-0">if you can't reach us we've probably</h3>
+      <h1>Gone Sailing !</h1>
+    </div>
+  </div>
+</div>
+
+ <main role="main">
+
+   <!-- Marketing messaging and featurettes
+   ================================================== -->
+   <!-- Wrap the rest of the page in another container to center all the content. -->
+
+   <div class="container marketing">
+
+     <!-- Three columns of text below the carousel -->
+     <div class="row">
+
+      <div class="col-lg-4">
+          <a href="/cruising/index.html">
+            <img class="rounded-circle" src="https://dpyyvkdkr8dej.cloudfront.net/site/thumbs/beaulieu-river.jpg?1683446571" alt="Generic placeholder image" width="140" height="140">
+          </a>          
+         <h2>Cruising</h2>
+         <p class="h-25">The reason for doing what we do. Nothing better than visiting wonderful new places and
+           enjoying fun new experiences all by sailboat. </p>
+         <p><a class="btn btn-secondary" href="/cruising/index.html" role="button">View stories &raquo;</a></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+          <a href="/boat-projects/index.html">
+            <img class="rounded-circle" src="https://dpyyvkdkr8dej.cloudfront.net/site/thumbs/engine.jpg?1683446571" alt="Generic placeholder image" width="140" height="140">
+          </a>
+         <h2>Boat Projects</h2>
+         <p class="h-25">
+           It's not all cocktails and sunshine, sometimes you have to get your
+           hands dirty. We try to do as much DIY boat work as we can.
+         </p>
+         <p><a class="btn btn-secondary" href="/boat-projects/index.html" role="button">View stories &raquo;</a></p>
+       </div><!-- /.col-lg-4 -->
+
+       <div class="col-lg-4">
+        <a href="/boat-buying/index.html">
+          <img class="rounded-circle" src="https://dpyyvkdkr8dej.cloudfront.net/site/thumbs/anika-launch-day.jpg?1683446571" alt="Generic placeholder image" width="140" height="140">
+        </a>
+         <h2>Boat Buying</h2>
+         <p class="h-25">
+           Buying a boat can be a scary process if you have never done it
+           before. We'll share our experiences and lessons learned with you.
+         </p>
+         <p><a class="btn btn-secondary" href="/boat-buying/index.html" role="button">View stories &raquo;</a></p>
+       </div><!-- /.col-lg-4 -->
+
+     </div><!-- /.row -->
+
+
+     <!-- START THE FEATURETTES -->
+     
+     
+
+
+ 
+
+
+
+<!-- 
+    post_tags = batteries &middot; solar
+    post_date_long = 26th July 2022
+    post_images_folder /posts/2022-07-26-is-your-battery-monitor-lying-to-you
+    post_image = /posts/2022-07-26-is-your-battery-monitor-lying-to-you/
+-->
+ 
+
+      
+<hr class="featurette-divider">
+
+<div class="row featurette">
+  <div class="col-md-7 order-md-1">
+      <a href="/boat-projects/2022/07/26/is-your-battery-monitor-lying-to-you.html">
+          <h2 class="featurette-heading">Is your Victron battery monitor lying to you?</h2><h3>Default settings need to be changed for use with Solar</h4>
+      </a>
+    <p class="lead"><p>If you have a Victron Energy BMV battery monitor and you charge your batteries by solar, you should check your battery monitor’s automatic synchronisation settings. With the default settings, you may think your batteries are 100% charged when they are in fact much lower.</p>
+</p>
+    <p><em>26th July 2022</em></p>
+    <p><a class="btn btn-secondary" href="/boat-projects/2022/07/26/is-your-battery-monitor-lying-to-you.html" role="button">read more &raquo;</a></p>
+  </div>
+  <div class="col-md-5 order-md-2">
+    <a href="/boat-projects/2022/07/26/is-your-battery-monitor-lying-to-you.html">
+        
+          <img class="featurette-image img-fluid mx-auto img-thumbnail rounded" src="https://dpyyvkdkr8dej.cloudfront.net/posts/2022/2022-07-26-is-your-battery-monitor-lying-to-you/500x500/IMG_0636.jpeg?1683446571" alt="Is your Victron battery monitor lying to you?">
+    
+    </a>
+  </div>
+</div>
+
+    
+
+
+ 
+
+
+
+<!-- 
+    post_tags = Hamble &middot; Yarmouth &middot; IOW &middot; West Country &middot; Plymouth &middot; Brixham
+    post_date_long = 26th June 2021
+    post_images_folder /posts/2021-06-26-plymouth-cruise
+    post_image = /posts/2021-06-26-plymouth-cruise/
+-->
+ 
+
+      
+<hr class="featurette-divider">
+
+<div class="row featurette">
+  <div class="col-md-7 order-md-2">
+      <a href="/cruising/2021/06/26/plymouth-cruise.html">
+          <h2 class="featurette-heading">Plymouth Cruise</h2><h3>Sailing to Plymouth and back, taking a bit more time to explore</h4>
+      </a>
+    <p class="lead"><p>15 days, 350NM - This was our 3rd trip down to the West Country. The goal this time was to just get as far as Plymouth and to spend more time in each place relaxing and exploring.</p>
+</p>
+    <p><em>26th June 2021</em></p>
+    <p><a class="btn btn-secondary" href="/cruising/2021/06/26/plymouth-cruise.html" role="button">read more &raquo;</a></p>
+  </div>
+  <div class="col-md-5 order-md-1">
+    <a href="/cruising/2021/06/26/plymouth-cruise.html">
+        
+          <img class="featurette-image img-fluid mx-auto img-thumbnail rounded" src="https://dpyyvkdkr8dej.cloudfront.net/posts/2021/2021-06-26-plymouth-cruise/500x500/IMG_8553.jpeg?1683446571" alt="Plymouth Cruise">
+    
+    </a>
+  </div>
+</div>
+
+    
+
+
+ 
+
+
+
+<!-- 
+    post_tags = Hamble &middot; Yarmouth &middot; IOW &middot; West Country
+    post_date_long = 5th August 2020
+    post_images_folder /posts/2020-08-05-cornish-cruise
+    post_image = /posts/2020-08-05-cornish-cruise/
+-->
+ 
+
+      
+<hr class="featurette-divider">
+
+<div class="row featurette">
+  <div class="col-md-7 order-md-1">
+      <a href="/cruising/2020/08/05/cornish-cruise.html">
+          <h2 class="featurette-heading">Cornish Summer Cruise</h2><h3>Our passage from the River Hamble to Gorran Haven in Cornwall and a leisurely sail back</h4>
+      </a>
+    <p class="lead"><p>A quick dash to Gorran Haven in Cornwall with friends and a leisurely sail back to Hamble. Why Gorran Haven? Having joked about it many times over a glass of wine, our mission was to get a photo of Anika anchored in the bay from our friend’s house in Gorran Haven.</p>
+</p>
+    <p><em>5th August 2020</em></p>
+    <p><a class="btn btn-secondary" href="/cruising/2020/08/05/cornish-cruise.html" role="button">read more &raquo;</a></p>
+  </div>
+  <div class="col-md-5 order-md-2">
+    <a href="/cruising/2020/08/05/cornish-cruise.html">
+        
+          <img class="featurette-image img-fluid mx-auto img-thumbnail rounded" src="https://dpyyvkdkr8dej.cloudfront.net/posts/2020/2020-08-05-cornish-cruise/500x500/IMG_7319.jpeg?1683446571" alt="Cornish Summer Cruise">
+    
+    </a>
+  </div>
+</div>
+
+    
+
+
+ 
+
+
+
+<!-- 
+    post_tags = Osbourne Bay &middot; IOW
+    post_date_long = 21st July 2019
+    post_images_folder /posts/2019-07-21-osbourne-bay
+    post_image = /posts/2019-07-21-osbourne-bay/
+-->
+ 
+
+      
+<hr class="featurette-divider">
+
+<div class="row featurette">
+  <div class="col-md-7 order-md-2">
+      <a href="/cruising/2019/07/21/osbourne-bay.html">
+          <h2 class="featurette-heading">Osbourne Bay, IOW</h2><h3>Our first trip to Osbourne Bay</h4>
+      </a>
+    <p class="lead"><p>An excellent day of firsts; first time we’ve anchored in Osborne Bay on the Isle-of-Wight, first time we’ve had to reef <em>Anika</em>’s main sail, first time out with all three vertical battens in the main.</p>
+</p>
+    <p><em>21st July 2019</em></p>
+    <p><a class="btn btn-secondary" href="/cruising/2019/07/21/osbourne-bay.html" role="button">read more &raquo;</a></p>
+  </div>
+  <div class="col-md-5 order-md-1">
+    <a href="/cruising/2019/07/21/osbourne-bay.html">
+        
+          <img class="featurette-image img-fluid mx-auto img-thumbnail rounded" src="https://dpyyvkdkr8dej.cloudfront.net/posts/2019/2019-07-21-osbourne-bay/500x500/IMG_5695.jpg?1683446571" alt="Osbourne Bay, IOW">
+    
+    </a>
+  </div>
+</div>
+
+    
+
+
+ 
+
+
+
+<!-- 
+    post_tags = Hamble &middot; Yarmouth &middot; IOW &middot; West Country
+    post_date_long = 19th April 2019
+    post_images_folder /posts/2019-04-19-west-country-odyssey
+    post_image = /posts/2019-04-19-west-country-odyssey/
+-->
+ 
+
+      
+<hr class="featurette-divider">
+
+<div class="row featurette">
+  <div class="col-md-7 order-md-1">
+      <a href="/cruising/2019/04/19/west-country-odyssey.html">
+          <h2 class="featurette-heading">Our First West Country Odyssey</h2><h3>From the river Hamble to Fowey, Cornwall and back</h4>
+      </a>
+    <p class="lead"><p>This was our first opportunity to take Anika on a longer cruise. With all the Brexit stuff going on we decided to head west along the English south coast and just see how far we get before having to turn back east towards home.</p>
+</p>
+    <p><em>19th April 2019</em></p>
+    <p><a class="btn btn-secondary" href="/cruising/2019/04/19/west-country-odyssey.html" role="button">read more &raquo;</a></p>
+  </div>
+  <div class="col-md-5 order-md-2">
+    <a href="/cruising/2019/04/19/west-country-odyssey.html">
+        
+          <img class="featurette-image img-fluid mx-auto img-thumbnail rounded" src="https://dpyyvkdkr8dej.cloudfront.net/posts/2019/2019-04-19-west-country-odyssey/500x500/IMG_5108.jpg?1683446571" alt="Our First West Country Odyssey">
+    
+    </a>
+  </div>
+</div>
+
+    
+
+<!--
+
+     <hr class="featurette-divider">
+
+     <div class="row featurette">
+       <div class="col-md-7">
+         <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+       </div>
+       <div class="col-md-5">
+         <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+       </div>
+     </div>
+
+     <hr class="featurette-divider">
+
+     <div class="row featurette">
+       <div class="col-md-7 order-md-2">
+         <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+       </div>
+       <div class="col-md-5 order-md-1">
+         <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+       </div>
+     </div>
+
+     <hr class="featurette-divider">
+
+     <div class="row featurette">
+       <div class="col-md-7">
+         <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+       </div>
+       <div class="col-md-5">
+         <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+       </div>
+     </div>
+
+     <hr class="featurette-divider">
+    -->
+
+     <!-- /END THE FEATURETTES -->
+
+   </div><!-- /.container -->
+
+ </main>
+
+
+    <!-- FOOTER -->
+<footer class="container">
+  <div class="row bg-secondary text-light mt-5 px-3 py-4">
+    <div class="col align-items-center">
+    <small>
+    <span class="float-end"><a href="#" class="text-light">Back to top</a></span>
+    <span class="test-light">&copy; 2018-2022 Gone Sailing uk - All rights reserved &middot; <a href="#" class="text-light">Privacy</a> &middot; <a href="#" class="text-light">Terms</a></span>
+  </small>
+</div>
+</div>
+  </footer>
+
+
+    <script type="text/javascript" src="/assets/vendor/bootstrap.bundle.min.js"></script>
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+  </body>
+</html>

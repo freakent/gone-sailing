@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/x-icon" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/favicon.ico?1000">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="https://dpyyvkdkr8dej.cloudfront.net/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/favicon-16x16.png">
+<link rel="manifest" href="/content/favicons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="https://dpyyvkdkr8dej.cloudfront.net/favicons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/assets/styles.css">
+    <title>
+      Gone Sailing 
+        - Is your Victron battery monitor lying to you? 
+    </title>
+  </head>
+  <body>
+    <script type="text/javascript" src="/assets/vendor/jquery.slim.min.js"></script>
+    
+
+<header>
+   <nav id="navbar" class="navbar navbar-expand-md fixed-top navbar-light bg-white">
+     <div class="container">
+     <a class="navbar-brand" href="/">Gone Sailing</a>
+    
+     <button id="toggled" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+    
+     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+
+       <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/cruising/index.html">Cruising</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/boat-projects/index.html">Boat Projects</a>
+        </li>
+        <li class="nav-item">
+           <a class="nav-link" href="/about-anika.html">Our Boat</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="/boat-buying/index.html">Boat Buying</a>
+         </li>
+         <li class="nav-item" id="crew">
+          <a class="nav-link" href="#">Crew</a>
+        </li>
+</ul>
+
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.instagram.com/mr.martin.jarvis/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow on Instagram">
+                  <span class="align-middle">
+                  <i id="ig-icon" class="fab fa-instagram fa-1x text-dark"></i>
+                  <span class="d-md-none">
+                    Follow on Instagram
+                  </span>
+                </span>
+                </a>
+            </li>
+        </ul>
+
+      </div>
+    </div>
+   </nav>
+ </header>
+
+
+  <script>
+    var navbar = document.getElementById("navbar")
+    var ig_icon = document.getElementById("ig-icon")
+
+    function navbar_white() {
+      navbar.classList.remove("navbar-dark", "bg-transparent");
+      navbar.classList.add("navbar-light", "bg-white");
+      ig_icon.classList.remove("text-light");
+      ig_icon.classList.add("text-dark");
+    }
+
+    function navbar_transparent() {
+      navbar.classList.remove("navbar-light", "bg-white");
+      navbar.classList.add("navbar-dark", "bg-transparent");
+      ig_icon.classList.remove("text-dark");
+      ig_icon.classList.add("text-light");
+    }
+
+    
+  </script>
+  
+  <script>
+  $( document ).ready(function() {
+    $('.navbar-collapse').on('show.bs.collapse', function() {
+      //console.log('Change navbar to white')
+      navbar_white()
+    })
+
+  });
+  </script>
+
+ </script>
+
+    
+
+
+ 
+
+
+
+<!-- 
+    post_tags = batteries &middot; solar
+    post_date_long = 26th July 2022
+    post_images_folder /posts/2022-07-26-is-your-battery-monitor-lying-to-you
+    post_image = /posts/2022-07-26-is-your-battery-monitor-lying-to-you/
+-->
+
+
+<div class="container" style="margin-top:60px; min-height: calc(100vh - 225px);">
+
+  
+  <div class="row">
+    <div class="col">
+    <p><a href="/boat-projects/index.html"><small>&lt; Back to Boat projects</small></a></p>
+  </div>
+  </div>
+  
+
+  <div class="row">
+
+    <main class="col-12 col-lg-9" >
+      <div class="mb-3 d-flex justify-content-center float-md-end ms-md-3">
+        <img class="img-thumbnail" src="https://dpyyvkdkr8dej.cloudfront.net/posts/2022/2022-07-26-is-your-battery-monitor-lying-to-you/250x250/IMG_0636.jpeg?1683446571" alt="Victron Energy Battery Monitor" style="max-height: 250px; object-fit: cover;">
+      </div>
+      <h1>Is your Victron battery monitor lying to you?</h1>
+    <h5 class="font-weight-light" id="subtitle">Default settings need to be changed for use with Solar</h3>
+    <!-- <p>Category: posts</p> -->
+    
+    <p class="fst-italic"><small>26th July 2022 by Martin</small></p>
+    
+    <p>If you have a Victron Energy BMV battery monitor and you charge your batteries by solar, you should check your battery monitor’s automatic synchronisation settings. With the default settings, you may think your batteries are 100% charged when they are in fact much lower.</p>
+
+<h3 id="automatic-synchronisations">Automatic Synchronisations</h3>
+<p>The Victron BMV uses a simple algorithm to decide whether your batteries are fully charged or not. If your battery voltage is <em>“relatively high”</em> and charge current <em>“relatively low”</em> for a few minutes, then it assumes your batteries are fully charged and automatically synchronises the system to 100% State of charge (SOC).</p>
+
+<p>This is based on how batteries behave when being charged. As your batteries approach 100% SOC, Battery voltage will increase whilst the charge current will reduce.</p>
+
+<p>However, in a Solar charged set up it is not uncommon for the MPPT to deliver periods of fluctuating voltage with less current due to cloud cover or shading of the panels. With the default battery monitor settings this can fool the battery monitor into thinking the battery has reached 100% SOC.</p>
+
+<p>Use the Victron Connect app to connect to your BMV and open the History tab. If the number of synchronisations is regularly increasing you should consider updating the synchronisation settings. Ideally your BMV should read 100% SOC when your Consumed Ah reaches zero.</p>
+
+<p><img src="https://dpyyvkdkr8dej.cloudfront.net/posts/2022/2022-07-26-is-your-battery-monitor-lying-to-you/250x250/IMG_0333.jpeg?1683446571" alt="app100pct" title="100% State of charge" class="img-thumbnail" />
+<img src="https://dpyyvkdkr8dej.cloudfront.net/posts/2022/2022-07-26-is-your-battery-monitor-lying-to-you/250x250/Frame-14-08-2022-11-21-26.jpg?1683446571" alt="appsync" title="Automatic synchronisations in Victron Connect App" class="img-thumbnail" /></p>
+
+<h3 id="synchronisation-settings">Synchronisation Settings</h3>
+<p>The actual values of <em>“relatively high”</em> battery voltage and <em>“relatively low”</em> charge current can be set in the Victron Connect app under <strong>Charged Voltage</strong> and <strong>Tail Current</strong>. The <a href="https://www.victronenergy.com/upload/documents/Manual-BMV-700-700H-702-712-EN-NL-FR-DE-ES-SE.pdf" title="Victron BMV manual online">Victron BMV manual</a> makes this helpful suggestion:</p>
+<div class="card">
+<div class="card-body">
+<b>The BMV synchronises too early</b><br />
+In solar systems or other applications with fluctuating charge currents, the following measures can be taken to reduce the probability for the BMV to reset prematurely to 100 % state of charge:
+<br />
+a) Increase the “charged” voltage to only slightly below the absorption charge voltage (for example: 14.2 V in case of 14.4 V absorption voltage).
+<br />
+b) Increase the “charged” detection time and/or decrease the tail current to prevent an early reset due to to passing clouds.
+</div></div>
+<p><br />
+By default, <strong>Charged Voltage</strong> is set to 13.2V, the <strong>Tail Current</strong> is set to 4% of Battery capacity and the <strong>Charged detection time</strong> to 3 mins.  If you are charging with Solar and leave these settings set to their default values then it is likely that you will experience automatic synchronisations well before the batteries are actually at 100% SOC. I have seen automatic synchronisation occur while charging with solar at levels that actually would be under 90% SOC.  Your battery monitor will be telling you the batteries are fully charged when they are not.</p>
+
+<p>It’s important to remember these settings don’t affect the MPPT’s actual charging of the batteries. If you have plenty of sunlight then the MPPT will keep charging the batteries through its bulk, absorption and float phases, even though your battery monitor already synchronised to 100% SOC.</p>
+
+<p>There is plenty of debate as to the best values to use for these <strong>Charged Voltage</strong>, <strong>Tail Current</strong> and <strong>Charged Detection Time</strong> settings. The general advice is to leave them as default unless you know what you are doing, but clearly that’s not good enough. The <a href="https://www.victronenergy.com/upload/documents/Manual-BMV-700-700H-702-712-EN-NL-FR-DE-ES-SE.pdf" title="Victron BMV manual online">Victron BMV manual</a> suggests changing the <strong>Charged voltage</strong> to 0.2v below absorption voltage. On the Victron forums they suggest using a value closer to the float voltage. The actual values you should use will depend on what type of batteries you have (lead acid, AGM or lithium), the battery manufacturers recommendations for charging voltage levels and your overall battery capacity.</p>
+
+<p><img src="https://dpyyvkdkr8dej.cloudfront.net/posts/2022/2022-07-26-is-your-battery-monitor-lying-to-you/250x250/Frame-14-08-2022-12-17-37.jpg?1683446571" alt="appsettings" title="Synchronisation settings in Victron Connect app" class="img-thumbnail" /></p>
+
+<p>I personally think that the actual voltage and battery current seen whilst the MPPT is in float phase are the best indication of 100% SOC and a good guide to what you should set the <strong>charged voltage</strong> and <strong>tail current</strong> to (assuming your MPPTs are configured correctly that is). In my system I have <strong>Charged Voltage</strong> 0.2 above float voltage and <strong>Tail current</strong> set to 2% of battery capacity. I also increased the <strong>Charged Detection Time</strong> to 5 mins. I don’t know if these values are perfect yet, but I am sure they are better than the default values. I will continue to monitor the monitor.</p>
+
+<p>What’s your experience with battery monitors with solar? Feel free to send me a message on Instagram to discuss.</p>
+
+
+  </main>
+
+
+  <nav class="d-none d-lg-block col-lg-3 bg-light" id="sidebar">
+    <div class="container-fluid sticky-top px-0" style="top:50px">
+    <div class="list-group list-group-flush pt-3">
+      <li class="list-group-item px-1 pb-0"><h5 class="font-weight-light">Contents</h5></li>
+      <div class="list-group list-group-flush" id="dynamic-section">
+        <!-- <li class="list-group-item">What to expect</li> -->
+      </div>
+    </div>
+    
+    <div class="list-group list-group-flush mt-3">
+      <li class="list-group-item list-group-item-light px-1 pb-0"><h5 class="font-weight-light">Tagged</h5></li>
+      <li class="list-group-item list-group-item-light pl-2 pb-0">batteries &middot; solar</li>
+    </div>
+  </div>
+  </nav>
+
+</div> <!-- row -->
+</div> <!-- container-fluid -->
+
+<div class="modal fade" id="modalCarousel" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h7 class="modal-title text-truncate">Is your Victron battery monitor lying to you?</h7>
+        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body bg-dark" style="height: calc(114vh - 200px)">
+        <div id="imageCarousel" class="carousel slide d-flex h-100 align-items-center" data-bs-ride="false">
+          <div class="carousel-inner">
+            
+
+              
+              
+            
+            <div class="carousel-item active" id="carousel-item-0">
+              <img class="d-block img-fluid m-auto" src="https://dpyyvkdkr8dej.cloudfront.net/posts/2022/2022-07-26-is-your-battery-monitor-lying-to-you/originals/IMG_0636.jpeg?1683446571" alt="Victron Energy Battery Monitor" style="max-height: calc(114vh - 235px)">
+              <div class="carousel-caption d-none Xd-md-block">
+                Victron Energy Battery Monitor
+              </div>
+            </div>
+            
+
+              
+              
+            
+            <div class="carousel-item " id="carousel-item-1">
+              <img class="d-block img-fluid m-auto" src="https://dpyyvkdkr8dej.cloudfront.net/posts/2022/2022-07-26-is-your-battery-monitor-lying-to-you/originals/IMG_0333.jpeg?1683446571" alt="100% State of charge" style="max-height: calc(114vh - 235px)">
+              <div class="carousel-caption d-none Xd-md-block">
+                100% State of charge
+              </div>
+            </div>
+            
+
+              
+              
+            
+            <div class="carousel-item " id="carousel-item-2">
+              <img class="d-block img-fluid m-auto" src="https://dpyyvkdkr8dej.cloudfront.net/posts/2022/2022-07-26-is-your-battery-monitor-lying-to-you/originals/Frame-14-08-2022-11-21-26.jpg?1683446571" alt="Automatic synchronisations in Victron Connect App" style="max-height: calc(114vh - 235px)">
+              <div class="carousel-caption d-none Xd-md-block">
+                Automatic synchronisations in Victron Connect App
+              </div>
+            </div>
+            
+
+              
+              
+            
+            <div class="carousel-item " id="carousel-item-3">
+              <img class="d-block img-fluid m-auto" src="https://dpyyvkdkr8dej.cloudfront.net/posts/2022/2022-07-26-is-your-battery-monitor-lying-to-you/originals/Frame-14-08-2022-12-17-37.jpg?1683446571" alt="Synchronisation settings in Victron Connect app" style="max-height: calc(114vh - 235px)">
+              <div class="carousel-caption d-none Xd-md-block">
+                Synchronisation settings in Victron Connect app
+              </div>
+            </div>
+            
+          </div> <!-- carouselInner -->
+          <div class="carousel-indicators">
+            
+
+              
+              
+            
+            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            
+
+              
+              
+            
+            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1" class="" aria-current="true" aria-label="Slide 1"></button>
+            
+
+              
+              
+            
+            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2" class="" aria-current="true" aria-label="Slide 1"></button>
+            
+
+              
+              
+            
+            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="3" class="" aria-current="true" aria-label="Slide 1"></button>
+            
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div> <!-- carousel -->
+      </div> <!-- modal-body -->
+<!--
+      <div class="modal-footer">
+        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+-->
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function(){
+    $("h3").each(function(index){
+      $('#sidebar .list-group #dynamic-section').append('<a class="list-group-item list-group-item-light list-group-item-action p-2 font-weight-light text-truncate" href="#'   
+        + $(this).attr('id') 
+        + '">'
+        + '<small>' 
+        + $(this).text() 
+        + '</small>'
+        + "</a>")
+    });
+    $('#sidebar .list-group #dynamic-section').append('<a class="list-group-item list-group-item-light list-group-item-action p-2 font-weight-light text-truncate" href="#"><small>back to top</small></a>')   
+
+    $('img.img-thumbnail').on( "click", function(event) {
+      let imgURL = $(event.target)[0].src
+      let imgFile = imgURL.split('/').pop().split('#')[0].split('?')[0]
+      let carouselItem = $('div.carousel-item img').filter(function(i,e ){ return e.src.includes(imgFile)}).parent()[0]
+      let index = carouselItem.id.split('-')[2]
+      console.log(carouselItem.id, index)
+      //$('div.carouselItem').find('[src="'+img+'"]')
+      $('#modalCarousel').modal('toggle')
+      let carousel = bootstrap.Carousel.getOrCreateInstance(document.getElementById('imageCarousel'))
+      carousel.to(index)
+    
+    })
+    
+    $('#imageCarousel').on("slide.bs.carousel", function(event) {
+      console.log(event.to)
+      console.log($('#carousel-item-'+event.to+' .carousel-caption').html())
+      $('.modal-title').html($('#carousel-item-'+event.to+' .carousel-caption').html())
+    })
+
+  });
+  </script>
+
+    <!-- FOOTER -->
+<footer class="container">
+  <div class="row bg-secondary text-light mt-5 px-3 py-4">
+    <div class="col align-items-center">
+    <small>
+    <span class="float-end"><a href="#" class="text-light">Back to top</a></span>
+    <span class="test-light">&copy; 2018-2022 Gone Sailing uk - All rights reserved &middot; <a href="#" class="text-light">Privacy</a> &middot; <a href="#" class="text-light">Terms</a></span>
+  </small>
+</div>
+</div>
+  </footer>
+
+
+    <script type="text/javascript" src="/assets/vendor/bootstrap.bundle.min.js"></script>
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+  </body>
+</html>

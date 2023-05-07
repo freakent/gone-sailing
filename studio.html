@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/x-icon" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/favicon.ico?1000">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="https://dpyyvkdkr8dej.cloudfront.net/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://dpyyvkdkr8dej.cloudfront.net/favicons/favicon-16x16.png">
+<link rel="manifest" href="/content/favicons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="https://dpyyvkdkr8dej.cloudfront.net/favicons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/assets/styles.css">
+    <title>
+      Gone Sailing 
+      
+    </title>
+  </head>
+  <body>
+    <script type="text/javascript" src="/assets/vendor/jquery.slim.min.js"></script>
+    
+
+<header>
+   <nav id="navbar" class="navbar navbar-expand-md fixed-top navbar-light bg-white">
+     <div class="container">
+     <a class="navbar-brand" href="/">Gone Sailing</a>
+    
+     <button id="toggled" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+    
+     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+
+       <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/cruising/index.html">Cruising</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/boat-projects/index.html">Boat Projects</a>
+        </li>
+        <li class="nav-item">
+           <a class="nav-link" href="/about-anika.html">Our Boat</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="/boat-buying/index.html">Boat Buying</a>
+         </li>
+         <li class="nav-item" id="crew">
+          <a class="nav-link" href="#">Crew</a>
+        </li>
+</ul>
+
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.instagram.com/mr.martin.jarvis/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Follow on Instagram">
+                  <span class="align-middle">
+                  <i id="ig-icon" class="fab fa-instagram fa-1x text-dark"></i>
+                  <span class="d-md-none">
+                    Follow on Instagram
+                  </span>
+                </span>
+                </a>
+            </li>
+        </ul>
+
+      </div>
+    </div>
+   </nav>
+ </header>
+
+
+  <script>
+    var navbar = document.getElementById("navbar")
+    var ig_icon = document.getElementById("ig-icon")
+
+    function navbar_white() {
+      navbar.classList.remove("navbar-dark", "bg-transparent");
+      navbar.classList.add("navbar-light", "bg-white");
+      ig_icon.classList.remove("text-light");
+      ig_icon.classList.add("text-dark");
+    }
+
+    function navbar_transparent() {
+      navbar.classList.remove("navbar-light", "bg-white");
+      navbar.classList.add("navbar-dark", "bg-transparent");
+      ig_icon.classList.remove("text-dark");
+      ig_icon.classList.add("text-light");
+    }
+
+    
+  </script>
+  
+  <script>
+  $( document ).ready(function() {
+    $('.navbar-collapse').on('show.bs.collapse', function() {
+      //console.log('Change navbar to white')
+      navbar_white()
+    })
+
+  });
+  </script>
+
+ </script>
+
+    
+<main role="main">
+
+  <div class="container" style="margin-top:80px;">
+    
+    <div class="row">
+      <table class="table table-sm"> 
+        <thead>
+          <tr>
+            <th>Page</th>
+            <th>Title / Sub-Title</th>
+            <th>Images</th>
+            <th>CMS</th>
+            <th>Categories</th>
+            <!-- <th>Tags</th> -->
+          </tr>
+        </thead>
+        <tbody>
+        
+          
+          
+
+          
+
+           <!-- include post_vars.html obj=page -->
+        
+        <tr class="small">
+          <td><small><a href="/boat-projects/2022/07/26/is-your-battery-monitor-lying-to-you.html">_posts/2022/2022-07-26-is-your-battery-monitor-lying-to-you.md</a></small></td>
+          <td>Is your Victron battery monitor lying to you?<br/><small>Default settings need to be changed for use with Solar</small></td>
+          <td><small>
+            
+              <a href="https://dpyyvkdkr8dej.cloudfront.net/posts/2022/2022-07-26-is-your-battery-monitor-lying-to-you/250x250/IMG_0636.jpeg?1683446571">IMG_0636.jpeg</a>
+              ,  
+            
+              <a href="https://dpyyvkdkr8dej.cloudfront.net/posts/2022/2022-07-26-is-your-battery-monitor-lying-to-you/250x250/IMG_0333.jpeg?1683446571">IMG_0333.jpeg</a>
+              ,  
+            
+              <a href="https://dpyyvkdkr8dej.cloudfront.net/posts/2022/2022-07-26-is-your-battery-monitor-lying-to-you/250x250/Frame-14-08-2022-11-21-26.jpg?1683446571">Frame-14-08-2022-11-21-26.jpg</a>
+              ,  
+            
+              <a href="https://dpyyvkdkr8dej.cloudfront.net/posts/2022/2022-07-26-is-your-battery-monitor-lying-to-you/250x250/Frame-14-08-2022-12-17-37.jpg?1683446571">Frame-14-08-2022-12-17-37.jpg</a>
+               
+            
+          </small></td>
+          <td>https://dpyyvkdkr8dej.cloudfront.net</td>
+          <td>boat-projects</td>
+         <!-- <td></td> -->
+        </tr>
+        
+          
+          
+
+          
+
+           <!-- include post_vars.html obj=page -->
+        
+        <tr class="small">
+          <td><small><a href="/cruising/2021/06/26/plymouth-cruise.html">_posts/2021/2021-06-26-plymouth-cruise.md</a></small></td>
+          <td>Plymouth Cruise<br/><small>Sailing to Plymouth and back, taking a bit more time to explore</small></td>
+          <td><small>
+            
+              <a href="https://dpyyvkdkr8dej.cloudfront.net/posts/2021/2021-06-26-plymouth-cruise/250x250/IMG_8553.jpeg?1683446571">IMG_8553.jpeg</a>
+              ,  
+            
+              <a href="https://dpyyvkdkr8dej.cloudfront.net/posts/2021/2021-06-26-plymouth-cruise/250x250/IMG_8551.jpeg?1683446571">IMG_8551.jpeg</a>
+              ,  
+            
+              <a href="https://dpyyvkdkr8dej.cloudfront.net/posts/2021/2021-06-26-plymouth-cruise/250x250/IMG_8561.jpeg?1683446571">IMG_8561.jpeg</a>
+              ,  
+            
+              <a href="https://dpyyvkdkr8dej.cloudfront.net/posts/2021/2021-06-26-plymouth-cruise/250x250/IMG_8583.jpeg?1683446571">IMG_8583.jpeg</a>
+               
+            
+          </small></td>
+          <td>https://dpyyvkdkr8dej.cloudfront.net</td>
+          <td>cruising</td>
+         <!-- <td></td> -->
+        </tr>
+        
+          
+          
+
+          
+
+           <!-- include post_vars.html obj=page -->
+        
+        <tr class="small">
+          <td><small><a href="/cruising/2020/08/05/cornish-cruise.html">_posts/2020/2020-08-05-cornish-cruise.md</a></small></td>
+          <td>Cornish Summer Cruise<br/><small>Our passage from the River Hamble to Gorran Haven in Cornwall and a leisurely sail back</small></td>
+          <td><small>
+            
+              <a href="https://dpyyvkdkr8dej.cloudfront.net/posts/2020/2020-08-05-cornish-cruise/250x250/IMG_7319.jpeg?1683446571">IMG_7319.jpeg</a>
+              ,  
+            
+              <a href="https://dpyyvkdkr8dej.cloudfront.net/posts/2020/2020-08-05-cornish-cruise/250x250/C2EFCCCD17B1.jpeg?1683446571">C2EFCCCD17B1.jpeg</a>
+              ,  
+            
+              <a href="https://dpyyvkdkr8dej.cloudfront.net/posts/2020/2020-08-05-cornish-cruise/250x250/7F1B1EC61BF0.jpeg?1683446571">7F1B1EC61BF0.jpeg</a>
+              ,  
+            
+              <a href="https://dpyyvkdkr8dej.cloudfront.net/posts/2020/2020-08-05-cornish-cruise/250x250/AD7F9A7EE4A3.jpeg?1683446571">AD7F9A7EE4A3.jpeg</a>
+               
+            
+          </small></td>
+          <td>https://dpyyvkdkr8dej.cloudfront.net</td>
+          <td>cruising</td>
+         <!-- <td></td> -->
+        </tr>
+        
+          
+          
+
+          
+
+           <!-- include post_vars.html obj=page -->
+        
+        <tr class="small">
+          <td><small><a href="/cruising/2019/07/21/osbourne-bay.html">_posts/2019/2019-07-21-osbourne-bay.md</a></small></td>
+          <td>Osbourne Bay, IOW<br/><small>Our first trip to Osbourne Bay</small></td>
+          <td><small>
+            
+              <a href="https://dpyyvkdkr8dej.cloudfront.net/posts/2019/2019-07-21-osbourne-bay/250x250/IMG_5695.jpg?1683446571">IMG_5695.jpg</a>
+               
+            
+          </small></td>
+          <td>https://dpyyvkdkr8dej.cloudfront.net</td>
+          <td>cruising</td>
+         <!-- <td></td> -->
+        </tr>
+        
+          
+          
+
+          
+
+           <!-- include post_vars.html obj=page -->
+        
+        <tr class="small">
+          <td><small><a href="/cruising/2019/04/19/west-country-odyssey.html">_posts/2019/2019-04-19-west-country-odyssey.md</a></small></td>
+          <td>Our First West Country Odyssey<br/><small>From the river Hamble to Fowey, Cornwall and back</small></td>
+          <td><small>
+            
+              <a href="https://dpyyvkdkr8dej.cloudfront.net/posts/2019/2019-04-19-west-country-odyssey/250x250/IMG_5108.jpg?1683446571">IMG_5108.jpg</a>
+              ,  
+            
+              <a href="https://dpyyvkdkr8dej.cloudfront.net/posts/2019/2019-04-19-west-country-odyssey/250x250/IMG_5118.jpeg?1683446571">IMG_5118.jpeg</a>
+              ,  
+            
+              <a href="https://dpyyvkdkr8dej.cloudfront.net/posts/2019/2019-04-19-west-country-odyssey/250x250/IMG_5119.jpeg?1683446571">IMG_5119.jpeg</a>
+              ,  
+            
+              <a href="https://dpyyvkdkr8dej.cloudfront.net/posts/2019/2019-04-19-west-country-odyssey/250x250/D6C9C180-BD65-48AE-BDCC-3C26C600AEBC.jpeg?1683446571">D6C9C180-BD65-48AE-BDCC-3C26C600AEBC.jpeg</a>
+               
+            
+          </small></td>
+          <td>https://dpyyvkdkr8dej.cloudfront.net</td>
+          <td>cruising</td>
+         <!-- <td></td> -->
+        </tr>
+        
+          
+          
+
+          
+
+           <!-- include post_vars.html obj=page -->
+        
+        <tr class="small">
+          <td><small><a href="/boat-projects/2019/03/24/project-teak-clean.html">_posts/2019/2019-03-24-project-teak-clean.md</a></small></td>
+          <td>Project Teak Clean<br/><small>Making Anika's decks look like new again</small></td>
+          <td><small>
+            
+              <a href="https://dpyyvkdkr8dej.cloudfront.net/posts/2019/2019-03-24-project-teak-clean/250x250/IMG_5021.jpeg?1683446571">IMG_5021.jpeg</a>
+              ,  
+            
+              <a href="https://dpyyvkdkr8dej.cloudfront.net/posts/2019/2019-03-24-project-teak-clean/250x250/IMG_4996.jpeg?1683446571">IMG_4996.jpeg</a>
+              ,  
+            
+              <a href="https://dpyyvkdkr8dej.cloudfront.net/posts/2019/2019-03-24-project-teak-clean/250x250/57505951652__4B28DE81-6BB1-4515-9808-AD0B633BC72F.jpeg?1683446571">57505951652__4B28DE81-6BB1-4515-9808-AD0B633BC72F.jpeg</a>
+               
+            
+          </small></td>
+          <td>https://dpyyvkdkr8dej.cloudfront.net</td>
+          <td>boat-projects</td>
+         <!-- <td></td> -->
+        </tr>
+        
+          
+          
+
+          
+
+           <!-- include post_vars.html obj=page -->
+        
+        <tr class="small">
+          <td><small><a href="/cruising/2019/01/01/happy-new-year.html">_posts/2019/2019-01-01-happy-new-year.md</a></small></td>
+          <td>New Year in Newtown Creek, IOW<br/><small></small></td>
+          <td><small>
+            
+              <a href="https://dpyyvkdkr8dej.cloudfront.net/posts/2019/2019-01-01-happy-new-year/250x250/IMG_4704.jpg?1683446571">IMG_4704.jpg</a>
+               
+            
+          </small></td>
+          <td>https://dpyyvkdkr8dej.cloudfront.net</td>
+          <td>cruising</td>
+         <!-- <td></td> -->
+        </tr>
+        
+          
+          
+
+          
+
+           <!-- include post_vars.html obj=page -->
+        
+        <tr class="small">
+          <td><small><a href="/boat-buying/2018/12/01/buying-a-boat.html">_posts/2018/2018-12-01-buying-a-boat.md</a></small></td>
+          <td>Things to remember when buying a boat<br/><small>Before you make an offer on a boat</small></td>
+          <td><small>
+            
+              <a href="https://dpyyvkdkr8dej.cloudfront.net/posts/2018/2018-12-01-buying-a-boat/250x250/IMG_3269.jpeg?1683446571">IMG_3269.jpeg</a>
+               
+            
+          </small></td>
+          <td>https://dpyyvkdkr8dej.cloudfront.net</td>
+          <td>boat-buying</td>
+         <!-- <td></td> -->
+        </tr>
+        
+          
+          
+
+          
+
+           <!-- include post_vars.html obj=page -->
+        
+        <tr class="small">
+          <td><small><a href="/cruising/2018/09/07/the-folly.html">_posts/2018/2018-09-07-the-folly.md</a></small></td>
+          <td>First trip to The Folly Inn, Cowes<br/><small></small></td>
+          <td><small>
+            
+              <a href="https://dpyyvkdkr8dej.cloudfront.net/posts/2018/2018-09-07-the-folly/250x250/IMG_4245.jpeg?1683446571">IMG_4245.jpeg</a>
+               
+            
+          </small></td>
+          <td>https://dpyyvkdkr8dej.cloudfront.net</td>
+          <td>cruising</td>
+         <!-- <td></td> -->
+        </tr>
+        
+          
+          
+
+          
+
+           <!-- include post_vars.html obj=page -->
+        
+        <tr class="small">
+          <td><small><a href="/boat-buying/2018/09/06/new-owners.html">_posts/2018/2018-09-06-new-owners.md</a></small></td>
+          <td>New Owners<br/><small>First Day of Yacht Ownership</small></td>
+          <td><small>
+            
+              <a href="https://dpyyvkdkr8dej.cloudfront.net/posts/2018/2018-09-06-new-owners/250x250/IMG_4237.jpeg?1683446571">IMG_4237.jpeg</a>
+               
+            
+          </small></td>
+          <td>https://dpyyvkdkr8dej.cloudfront.net</td>
+          <td>boat-buying</td>
+         <!-- <td></td> -->
+        </tr>
+        
+          
+          
+
+          
+
+           <!-- include post_vars.html obj=page -->
+        
+        <tr class="small">
+          <td><small><a href="/boat-buying/2018/09/03/launch-day.html">_posts/2018/2018-09-03-launch-day.md</a></small></td>
+          <td>Launch Day<br/><small></small></td>
+          <td><small>
+            
+              <a href="https://dpyyvkdkr8dej.cloudfront.net/posts/2018/2018-09-03-launch-day/250x250/anika-launch-day.png?1683446571">anika-launch-day.png</a>
+               
+            
+          </small></td>
+          <td>https://dpyyvkdkr8dej.cloudfront.net</td>
+          <td>boat-buying</td>
+         <!-- <td></td> -->
+        </tr>
+        
+          
+          
+
+          
+
+           <!-- include post_vars.html obj=page -->
+        
+        <tr class="small">
+          <td><small><a href="/about-anika.html">about-anika.md</a></small></td>
+          <td>About "S/Y Anika"<br/><small></small></td>
+          <td><small>
+            
+              <a href="https://dpyyvkdkr8dej.cloudfront.net/site/250x250/IMG_5369.jpg?1683446571">IMG_5369.jpg</a>
+               
+            
+          </small></td>
+          <td>https://dpyyvkdkr8dej.cloudfront.net</td>
+          <td></td>
+         <!-- <td></td> -->
+        </tr>
+        
+          
+          
+
+          
+
+           <!-- include post_vars.html obj=page -->
+        
+        <tr class="small">
+          <td><small><a href="/">index.html</a></small></td>
+          <td><br/><small></small></td>
+          <td><small>
+            
+          </small></td>
+          <td>https://dpyyvkdkr8dej.cloudfront.net</td>
+          <td></td>
+         <!-- <td></td> -->
+        </tr>
+        
+          
+          
+
+          
+
+           <!-- include post_vars.html obj=page -->
+        
+        <tr class="small">
+          <td><small><a href="/insta.html">insta.html</a></small></td>
+          <td>Sailing Yacht "Anika"<br/><small></small></td>
+          <td><small>
+            
+              <a href="https://dpyyvkdkr8dej.cloudfront.net/site/250x250/IMG_5369.jpg?1683446571">IMG_5369.jpg</a>
+               
+            
+          </small></td>
+          <td>https://dpyyvkdkr8dej.cloudfront.net</td>
+          <td></td>
+         <!-- <td></td> -->
+        </tr>
+        
+          
+          
+
+          
+
+           <!-- include post_vars.html obj=page -->
+        
+        <tr class="small">
+          <td><small><a href="/studio.html">studio.html</a></small></td>
+          <td><br/><small></small></td>
+          <td><small>
+            
+          </small></td>
+          <td>https://dpyyvkdkr8dej.cloudfront.net</td>
+          <td></td>
+         <!-- <td></td> -->
+        </tr>
+        
+          
+          
+
+          
+            
+      </tbody>
+      </table>
+        
+    </div>
+
+  </div> <!-- container -->
+
+</main>
+
+
+
+  <style>
+    :target::before {
+      content: "";
+      display: block;
+      height: 60px; /* fixed header height*/
+      margin: -60px 0 0; /* negative fixed header height */
+    }
+  </style>
+
+    <!-- FOOTER -->
+<footer class="container">
+  <div class="row bg-secondary text-light mt-5 px-3 py-4">
+    <div class="col align-items-center">
+    <small>
+    <span class="float-end"><a href="#" class="text-light">Back to top</a></span>
+    <span class="test-light">&copy; 2018-2022 Gone Sailing uk - All rights reserved &middot; <a href="#" class="text-light">Privacy</a> &middot; <a href="#" class="text-light">Terms</a></span>
+  </small>
+</div>
+</div>
+  </footer>
+
+
+    <script type="text/javascript" src="/assets/vendor/bootstrap.bundle.min.js"></script>
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+  </body>
+</html>
