@@ -19,7 +19,7 @@
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^6.0.0",
     "del": "^7.0.0",
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.0",
     "gulp-changed": "^4.0.0",
     "gulp-debug": "^4.0.0",
     "gulp-image-resize": "^0.13.1",
